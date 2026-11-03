@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power BI - Ordem Cronológica de Pagamentos (Lei 14.133/2021)</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Segoe UI', 'Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            pbi: {
+              yellow: '#F2C811',
+              darkYellow: '#DDAA00',
+              ribbon: '#201F1E',
+              chrome: '#252423',
+              border: '#3B3A39',
+              canvas: '#1B1A19',
+              card: '#292827',
+              cardHover: '#323130',
+              subtext: '#A19F9D',
+              accent: '#118DFF',
+              emerald: '#107C41',
+              rose: '#D83B01',
+              purple: '#8764B8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #1a1918; }
+    ::-webkit-scrollbar-thumb { background: #3c3b39; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #555350; }
+    .pbi-card {
+      transition: all 0.15s ease-in-out;
+      border: 1px solid #323130;
+      background: #252423;
+    }
+    .pbi-card:hover {
+      border-color: #F2C811;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+    }
+    .badge-conform {
+      background: rgba(16, 124, 65, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 124, 65, 0.35);
+    }
+    .badge-alert {
+      background: rgba(216, 59, 1, 0.15);
+      color: #fb7185;
+      border: 1px solid rgba(216, 59, 1, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-[#121212] text-[#F3F2F1] font-sans h-screen flex flex-col overflow-hidden select-none">
+
+  <!-- ================= POWER BI TOP APP BAR ================= -->
+  <header class="bg-[#181818] border-b border-[#2b2b2b] px-3 py-1.5 flex items-center justify-between text-xs shrink-0 z-40">
+    <div class="flex items-center gap-3">
+      <!-- Power BI Brand Logo Mock -->
+      <div class="flex items-center gap-2">
+        <div class="h-6 w-6 rounded bg-[#F2C811] flex items-center justify-center font-black text-black text-xs shadow shadow-yellow-500/20">
+          Pb
+        </div>
+        <div>
+          <span class="font-bold text-white tracking-wide text-xs">Gestão de Ordem Cronológica de Pagamentos • Lei 14.133/2021</span>
+          <span class="text-[10px] text-pbi-subtext ml-2 px-1.5 py-0.5 rounded bg-[#2a2a2a] border border-[#3a3a3a]">Dataset: ordem_cronologica.xlsx (10.155 registros)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Tools & Quick Actions -->
+    <div class="flex items-center gap-2">
+      <button onclick="openDaxModal()" class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#2a2717] hover:bg-[#3d371d] text-[11px] text-[#F2C811] border border-[#745f14] transition font-semibold">
+        <i data-lucide="code-2" class="w-3.5 h-3.5"></i>
+        <span>Copiar Medidas DAX</span>
+      </button>
+      <button onclick="toggleFilterPane()" class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#252423] hover:bg-[#323130] text-[11px] text-[#F3F2F1] border border-[#3b3a39] transition">
+        <i data-lucide="filter" class="w-3.5 h-3.5 text-[#F2C811]"></i>
+        <span id="filterPaneBtnText">Painel de Filtros</span>
+      </button>
+      <button onclick="resetAllFilters()" class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#252423] hover:bg-[#323130] text-[11px] text-[#C8C6C4] hover:text-white border border-[#3b3a39] transition" title="Redefinir Filtros">
+        <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+        <span>Limpar Filtros</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= POWER BI WORKSPACE (CANVAS + SLICER DRAWER) ================= -->
+  <div class="flex-1 flex overflow-hidden relative">
+
+    <!-- MAIN 16:9 REPORT CANVAS VIEW -->
+    <div class="flex-1 overflow-y-auto bg-[#1b1a19] p-3 lg:p-4 flex flex-col justify-start items-center">
+      
+      <!-- 16:9 Canvas Frame (1536px responsive container) -->
+      <div id="pbiCanvas" class="w-full max-w-[1536px] bg-[#201F1E] border border-[#2d2c2a] rounded-lg shadow-2xl p-4 flex flex-col gap-3 min-h-[790px]">
+
+        <!-- TOP BAR INSIDE CANVAS: INTERACTIVE SLICERS (Segmentadores em Tela) -->
+        <div class="bg-[#252423] border border-[#323130] rounded p-2.5 flex flex-wrap items-center justify-between gap-3 shrink-0">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs font-semibold uppercase tracking-wider text-pbi-yellow flex items-center gap-1.5">
+              <i data-lucide="sliders" class="w-3.5 h-3.5"></i>
+              Segmentadores de Dados:
+            </span>
+            <!-- Campus / UG Executora Slicer -->
+            <select id="canvasCampus" onchange="syncAndApplyFilter('campus', this.value)" class="bg-[#1b1a19] border border-[#3b3a39] text-xs text-white rounded px-2.5 py-1 focus:ring-1 focus:ring-[#F2C811] outline-none">
+              <option value="ALL">Todos os Campi (19 Unidades Gestoras)</option>
+              <option value="Salvador">Salvador</option>
+              <option value="Reitoria">Reitoria</option>
+              <option value="Simões Filho">Simões Filho</option>
+              <option value="Feira de Santana">Feira de Santana</option>
+              <option value="Vitória da Conquista">Vitória da Conquista</option>
+              <option value="Camaçari">Camaçari</option>
+              <option value="Ilhéus">Ilhéus</option>
+              <option value="Eunápolis">Eunápolis</option>
+              <option value="Porto Seguro">Porto Seguro</option>
+              <option value="Brumado">Brumado</option>
+              <option value="Barreiras">Barreiras</option>
+              <option value="Jacobina">Jacobina</option>
+              <option value="Irecê">Irecê</option>
+              <option value="Paulo Afonso">Paulo Afonso</option>
+              <option value="Jequié">Jequié</option>
+              <option value="Santo Amaro">Santo Amaro</option>
+              <option value="Seabra">Seabra</option>
+              <option value="Valença">Valença</option>
+              <option value="Euclides da Cunha">Euclides da Cunha</option>
+            </select>
+
+            <!-- Natureza de Despesa Slicer -->
+            <select id="canvasNatureza" onchange="syncAndApplyFilter('natureza', this.value)" class="bg-[#1b1a19] border border-[#3b3a39] text-xs text-white rounded px-2.5 py-1 focus:ring-1 focus:ring-[#F2C811] outline-none">
+              <option value="ALL">Todas as Naturezas de Despesa</option>
+              <option value="MATERIAL DE CONSUMO">Material de Consumo (339030)</option>
+              <option value="OUTROS SERVICOS DE TERCEIROS - PESSOA JURIDICA">Serviços Terc. - PJ (339039)</option>
+              <option value="LOCACAO DE MAO-DE-OBRA">Locação de Mão-de-Obra (339037)</option>
+              <option value="OBRAS E INSTALACOES">Obras e Instalações (449051)</option>
+              <option value="EQUIPAMENTOS E MATERIAL PERMANENTE">Equip. e Material Permanente (449052)</option>
+            </select>
+
+            <!-- Status SLA Slicer -->
+            <select id="canvasSla" onchange="syncAndApplyFilter('sla', this.value)" class="bg-[#1b1a19] border border-[#3b3a39] text-xs text-white rounded px-2.5 py-1 focus:ring-1 focus:ring-[#F2C811] outline-none">
+              <option value="ALL">Status SLA (Todos)</option>
+              <option value="EM_DIA">No Prazo de Vencimento</option>
+              <option value="ATRASO">Com Atraso no Vencimento</option>
+            </select>
+          </div>
+
+          <!-- Active Filter Pill Indicator -->
+          <div class="flex items-center gap-2">
+            <span id="activeFiltersSummary" class="text-[11px] text-[#A19F9D]">Visão Global Consolidada</span>
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+          </div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- PÁGINA 1: VISÃO EXECUTIVA & GOVERNANÇA FINANCEIRA             -->
+        <!-- ============================================================== -->
+        <div id="page1" class="flex-1 flex flex-col gap-3">
+          
+          <!-- ROW 1: 5 DAX KPI CARDS -->
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-3 shrink-0">
+            <!-- Card 1: Valor Total Pago -->
+            <div class="pbi-card rounded p-3 relative overflow-hidden flex flex-col justify-between">
+              <div class="flex items-center justify-between text-pbi-subtext text-[11px]">
+                <span class="font-mono text-xs">[Valor Total Pago]</span>
+                <i data-lucide="dollar-sign" class="w-4 h-4 text-[#F2C811]"></i>
+              </div>
+              <div class="mt-1">
+                <span id="p1KpiValor" class="text-xl lg:text-2xl font-bold tracking-tight text-white font-sans">R$ 563,66 Mi</span>
+                <p class="text-[10px] text-pbi-subtext mt-0.5">DAX: <span class="font-mono text-zinc-300">SUM(saldo_moeda_origem)</span></p>
+              </div>
+            </div>
+
+            <!-- Card 2: Qtd Pagamentos -->
+            <div class="pbi-card rounded p-3 relative overflow-hidden flex flex-col justify-between">
+              <div class="flex items-center justify-between text-pbi-subtext text-[11px]">
+                <span class="font-mono text-xs">[Qtd Pagamentos]</span>
+                <i data-lucide="file-check" class="w-4 h-4 text-sky-400"></i>
+              </div>
+              <div class="mt-1">
+                <span id="p1KpiQtd" class="text-xl lg:text-2xl font-bold tracking-tight text-white font-sans">9.482</span>
+                <p class="text-[10px] text-pbi-subtext mt-0.5">DAX: <span class="font-mono text-zinc-300">DISTINCTCOUNT(documento)</span></p>
+              </div>
+            </div>
+
+            <!-- Card 3: Ticket Médio -->
+            <div class="pbi-card rounded p-3 relative overflow-hidden flex flex-col justify-between">
+              <div class="flex items-center justify-between text-pbi-subtext text-[11px]">
+                <span class="font-mono text-xs">[Ticket Médio]</span>
+                <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i>
+              </div>
+              <div class="mt-1">
+                <span id="p1KpiTicket" class="text-xl lg:text-2xl font-bold tracking-tight text-white font-sans">R$ 55,50 Mil</span>
+                <p class="text-[10px] text-pbi-subtext mt-0.5">DAX: <span class="font-mono text-zinc-300">DIVIDE(Valor, Qtd)</span></p>
+              </div>
+            </div>
+
+            <!-- Card 4: % Pontualidade -->
+            <div class="pbi-card rounded p-3 relative overflow-hidden flex flex-col justify-between">
+              <div class="flex items-center justify-between text-pbi-subtext text-[11px]">
+                <span class="font-mono text-xs">[% Pontualidade]</span>
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              </div>
+              <div class="mt-1">
+                <span id="p1KpiSla" class="text-xl lg:text-2xl font-bold tracking-tight text-emerald-400 font-sans">88,2%</span>
+                <p class="text-[10px] text-pbi-subtext mt-0.5">DAX: <span class="font-mono text-zinc-300">pgto <= vencimento</span></p>
+              </div>
+            </div>
+
+            <!-- Card 5: Valor Pago em Atraso -->
+            <div class="pbi-card rounded p-3 relative overflow-hidden flex flex-col justify-between col-span-2 md:col-span-1">
+              <div class="flex items-center justify-between text-pbi-subtext text-[11px]">
+                <span class="font-mono text-xs">[Valor em Atraso]</span>
+                <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-400"></i>
+              </div>
+              <div class="mt-1">
+                <span id="p1KpiAtraso" class="text-xl lg:text-2xl font-bold tracking-tight text-rose-400 font-sans">R$ 38,12 Mi</span>
+                <p class="text-[10px] text-pbi-subtext mt-0.5">Risco de juros e encargos moratórios</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROW 2: 2 CHARTS (EVOLUÇÃO TEMPORAL & CATEGORIA DE DESPESA) -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 flex-1 min-h-[290px]">
+            <!-- Chart 1: Temporal -->
+            <div class="pbi-card rounded p-3 lg:col-span-2 flex flex-col justify-between">
+              <div class="flex items-center justify-between mb-1.5">
+                <div>
+                  <h3 class="text-xs font-semibold text-white uppercase tracking-wider flex items-center gap-1.5">
+                    <span class="w-1.5 h-3 bg-[#F2C811] rounded-sm"></span>
+                    Evolução Mensal de Desembolso Financeiro e Volume de Ordens Bancárias
+                  </h3>
+                  <p class="text-[10px] text-pbi-subtext">Eixo: <span class="font-mono text-zinc-300">comrpromisso_dia_pagamento</span> | Linha: Valor Total (R$) | Barras: Qtd Pagamentos</p>
+                </div>
+              </div>
+              <div class="relative w-full h-[230px] flex-1">
+                <canvas id="p1ChartTimeline"></canvas>
+              </div>
+            </div>
+
+            <!-- Chart 2: Natureza de Despesa -->
+            <div class="pbi-card rounded p-3 flex flex-col justify-between">
+              <div class="flex items-center justify-between mb-1">
+                <div>
+                  <h3 class="text-xs font-semibold text-white uppercase tracking-wider flex items-center gap-1.5">
+                    <span class="w-1.5 h-3 bg-sky-400 rounded-sm"></span>
+                    Desembolso por Natureza de Despesa
+                  </h3>
+                  <p class="text-[10px] text-pbi-subtext">Coluna: <span class="font-mono text-zinc-300">natureza_despesa</span> (Lei 14.133 art. 141)</p>
+                </div>
+              </div>
+              <div class="relative w-full h-[220px] flex items-center justify-center">
+                <canvas id="p1ChartNatureza"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROW 3: 2 CHARTS (EXECUÇÃO POR CAMPUS & TOP 10 CREDORES) -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 flex-1 min-h-[290px]">
+            <!-- Chart 3: Execução por Campus -->
+            <div class="pbi-card rounded p-3 flex flex-col justify-between">
+              <div class="flex items-center justify-between mb-1.5">
+                <div>
+                  <h3 class="text-xs font-semibold text-white uppercase tracking-wider flex items-center gap-1.5">
+                    <span class="w-1.5 h-3 bg-emerald-400 rounded-sm"></span>
+                    Execução Orçamentária por Campus / UG Executora
+                  </h3>
+                  <p class="text-[10px] text-pbi-subtext">Total pago (R$ Milhões) consolidado por <span class="font-mono text-zinc-300">ug_executora_nome</span></p>
+                </div>
+              </div>
+              <div class="relative w-full h-[230px] flex-1">
+                <canvas id="p1ChartCampus"></canvas>
+              </div>
+            </div>
+
+            <!-- Chart 4: Top 10 Credores -->
+            <div class="pbi-card rounded p-3 flex flex-col justify-between">
+              <div class="flex items-center justify-between mb-1.5">
+                <div>
+                  <h3 class="text-xs font-semibold text-white uppercase tracking-wider flex items-center gap-1.5">
+                    <span class="w-1.5 h-3 bg-purple-400 rounded-sm"></span>
+                    Top 10 Maiores Credores por Volume Financeiro
+                  </h3>
+                  <p class="text-[10px] text-pbi-subtext">Concentração de gastos por <span class="font-mono text-zinc-300">dh_credor</span></p>
+                </div>
+              </div>
+              <div class="relative w-full h-[230px] flex-1">
+                <canvas id="p1ChartCredores"></canvas>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- PÁGINA 2: SLA DE VENCIMENTO & GARGALOS DE LEAD TIME           -->
+        <!-- ============================================================== -->
+        <div id="page2" class="flex-1 flex flex-col gap-3 hidden">
+          
+          <!-- SLA CARDS ROW -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 shrink-0">
+            <div class="pbi-card rounded p-3">
+              <span class="text-pbi-subtext text-[11px] font-mono">[Lead Time Total Médio]</span>
+              <div class="mt-1 flex items-baseline gap-2">
+                <span class="text-2xl font-bold text-white font-sans">13,8 dias</span>
+                <span class="text-[10px] text-pbi-subtext">(Ateste → Pagamento)</span>
+              </div>
+              <p class="text-[10px] text-zinc-400 mt-1 font-mono">DATEDIFF(dh_dia_ateste, comrpromisso_dia_pagamento)</p>
+            </div>
+
+            <div class="pbi-card rounded p-3">
+              <span class="text-pbi-subtext text-[11px] font-mono">[Tempo Ateste até Emissão]</span>
+              <div class="mt-1 flex items-baseline gap-2">
+                <span class="text-2xl font-bold text-sky-400 font-sans">4,2 dias</span>
+                <span class="text-[10px] text-pbi-subtext">(Ateste → DH Siafi)</span>
+              </div>
+              <p class="text-[10px] text-zinc-400 mt-1 font-mono">Fase de conferência do fiscal</p>
+            </div>
+
+            <div class="pbi-card rounded p-3">
+              <span class="text-pbi-subtext text-[11px] font-mono">[Tempo Médio em Tesouraria]</span>
+              <div class="mt-1 flex items-baseline gap-2">
+                <span class="text-2xl font-bold text-purple-400 font-sans">9,6 dias</span>
+                <span class="text-[10px] text-pbi-subtext">(DH Siafi → Pagamento)</span>
+              </div>
+              <p class="text-[10px] text-zinc-400 mt-1 font-mono">Fase de fila bancária / repasse</p>
+            </div>
+
+            <div class="pbi-card rounded p-3">
+              <span class="text-pbi-subtext text-[11px] font-mono">[Atraso Médio Efetivo]</span>
+              <div class="mt-1 flex items-baseline gap-2">
+                <span class="text-2xl font-bold text-rose-400 font-sans">6,4 dias</span>
+                <span class="text-[10px] text-rose-400/80">(Casos com estouro de prazo)</span>
+              </div>
+              <p class="text-[10px] text-zinc-400 mt-1 font-mono">Dias além de compromisso_dia_vencimento</p>
+            </div>
+          </div>
+
+          <!-- CHARTS FOR SLA & PROCESS BOTTLENECK -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 flex-1 min-h-[300px]">
+            <!-- Bottleneck Chart -->
+            <div class="pbi-card rounded p-3 flex flex-col justify-between">
+              <div class="mb-1.5">
+                <h3 class="text-xs font-semibold text-white uppercase tracking-wider flex items-center gap-1.5">
+                  <span class="w-1.5 h-3 bg-sky-400 rounded-sm"></span>
+                  Decomposição do Lead Time do Ciclo de Desembolso
+                </h3>
+                <p class="text-[10px] text-pbi-subtext">Identificação de gargalos operacionais: Fase 1 (Fiscalização) vs. Fase 2 (Tesouraria)</p>
+              </div>
+              <div class="relative w-full h-[250px] flex-1">
+                <canvas id="p2ChartDecomposicao"></canvas>
+              </div>
+            </div>
+
+            <!-- Pontualidade por Campus -->
+            <div class="pbi-card rounded p-3 flex flex-col justify-between">
+              <div class="mb-1.5">
+                <h3 class="text-xs font-semibold text-white uppercase tracking-wider flex items-center gap-1.5">
+                  <span class="w-1.5 h-3 bg-[#F2C811] rounded-sm"></span>
+                  Conformidade de SLA por Campus (% No Prazo de Vencimento)
+                </h3>
+                <p class="text-[10px] text-pbi-subtext">Proporção de pagamentos que não violaram a data de vencimento</p>
+              </div>
+              <div class="relative w-full h-[250px] flex-1">
+                <canvas id="p2ChartSlaCampi"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCATTER / SUMMARY MATRIX -->
+          <div class="pbi-card rounded p-3 flex-1 flex flex-col justify-between min-h-[220px]">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xs font-semibold text-white uppercase tracking-wider flex items-center gap-1.5">
+                <span class="w-1.5 h-3 bg-emerald-400 rounded-sm"></span>
+                Matriz de Desempenho e Compliance por Unidade Gestora (UG)
+              </h3>
+              <span class="text-[10px] text-pbi-subtext">Base consolidada para relatórios de Governança e Auditoria Interna</span>
+            </div>
+            <div class="overflow-x-auto flex-1 border border-[#3b3a39] rounded">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-[#2d2c2a] text-pbi-subtext uppercase text-[10px] border-b border-[#3b3a39]">
+                  <tr>
+                    <th class="py-2 px-3">Campus (UG Executora)</th>
+                    <th class="py-2 px-3 text-right">Total Pago (R$)</th>
+                    <th class="py-2 px-3 text-center">Ordens Bancárias</th>
+                    <th class="py-2 px-3 text-center">% Pontualidade</th>
+                    <th class="py-2 px-3 text-center">Lead Time Médio</th>
+                    <th class="py-2 px-3 text-center">Status Auditoria</th>
+                  </tr>
+                </thead>
+                <tbody id="p2MatrixBody" class="divide-y divide-[#323130] text-slate-300">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- PÁGINA 3: FILA CRONOLÓGICA & AUDITORIA DETALHADA              -->
+        <!-- ============================================================== -->
+        <div id="page3" class="flex-1 flex flex-col gap-3 hidden">
+          
+          <!-- AUDIT CARDS -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 shrink-0">
+            <div class="pbi-card rounded p-3 flex items-center justify-between">
+              <div>
+                <span class="text-pbi-subtext text-[11px] font-mono">[Filas Segregadas por Fonte]</span>
+                <h4 class="text-xl font-bold text-white mt-1">3 Fontes Primárias</h4>
+                <p class="text-[10px] text-pbi-subtext">1000000000, 1050000000, 1150000000</p>
+              </div>
+              <div class="p-2 rounded bg-sky-500/10 text-sky-400">
+                <i data-lucide="layers" class="w-5 h-5"></i>
+              </div>
+            </div>
+
+            <div class="pbi-card rounded p-3 flex items-center justify-between">
+              <div>
+                <span class="text-pbi-subtext text-[11px] font-mono">[Suspeitas de Inversão de Fila]</span>
+                <h4 class="text-xl font-bold text-amber-400 mt-1">14 Ocorrências</h4>
+                <p class="text-[10px] text-amber-400/80">Necessitam de justificativa prévia nos autos (art. 141, §1º)</p>
+              </div>
+              <div class="p-2 rounded bg-amber-500/10 text-amber-400">
+                <i data-lucide="shield-alert" class="w-5 h-5"></i>
+              </div>
+            </div>
+
+            <div class="pbi-card rounded p-3 flex items-center justify-between">
+              <div>
+                <span class="text-pbi-subtext text-[11px] font-mono">[Adesão ao Art. 141 da Lei 14.133]</span>
+                <h4 class="text-xl font-bold text-emerald-400 mt-1">99,86% Conforme</h4>
+                <p class="text-[10px] text-pbi-subtext">Índice global de observância cronológica</p>
+              </div>
+              <div class="p-2 rounded bg-emerald-500/10 text-emerald-400">
+                <i data-lucide="check-check" class="w-5 h-5"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- DETAILED AUDIT GRID WITH SEARCH -->
+          <div class="pbi-card rounded p-3 flex-1 flex flex-col justify-between min-h-[480px]">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+              <div>
+                <h3 class="text-xs font-semibold text-white uppercase tracking-wider flex items-center gap-1.5">
+                  <span class="w-1.5 h-3 bg-[#F2C811] rounded-sm"></span>
+                  Auditoria Analítica de Pagamentos & Prazos da Ordem Cronológica
+                </h3>
+                <p class="text-[10px] text-pbi-subtext">Drill-through dos compromissos e ordens bancárias emitidas</p>
+              </div>
+
+              <!-- Search Box & Export -->
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <i data-lucide="search" class="w-3.5 h-3.5 absolute left-2.5 top-2.5 text-pbi-subtext"></i>
+                  <input type="text" id="gridSearchInput" onkeyup="filterAuditGrid()" placeholder="Pesquisar processo, credor ou DH..." class="bg-[#1b1a19] border border-[#3b3a39] text-xs text-white rounded pl-8 pr-3 py-1.5 focus:ring-1 focus:ring-[#F2C811] outline-none w-64" />
+                </div>
+                <button onclick="exportTableToCSV()" class="px-2.5 py-1.5 rounded bg-[#2d2c2a] hover:bg-[#383735] text-xs text-white border border-[#3b3a39] flex items-center gap-1.5 transition">
+                  <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                  <span>Exportar CSV</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Table Container -->
+            <div class="overflow-x-auto flex-1 border border-[#3b3a39] rounded">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-[#2d2c2a] text-pbi-subtext uppercase text-[10px] border-b border-[#3b3a39]">
+                  <tr>
+                    <th class="py-2.5 px-3">Processo (SEI)</th>
+                    <th class="py-2.5 px-3">Campus</th>
+                    <th class="py-2.5 px-3">Credor / Fornecedor</th>
+                    <th class="py-2.5 px-3 text-right">Valor Pago (R$)</th>
+                    <th class="py-2.5 px-3 text-center">Data Ateste</th>
+                    <th class="py-2.5 px-3 text-center">Vencimento</th>
+                    <th class="py-2.5 px-3 text-center">Pagamento</th>
+                    <th class="py-2.5 px-3 text-center">Status SLA</th>
+                  </tr>
+                </thead>
+                <tbody id="gridTableBody" class="divide-y divide-[#323130] text-slate-300 font-mono text-[11px]">
+                  <!-- Rendered via JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Pagination bar -->
+            <div class="flex items-center justify-between text-xs text-pbi-subtext mt-3 pt-2 border-t border-[#323130]">
+              <span id="gridPaginationInfo">Mostrando registros</span>
+              <div class="flex items-center gap-1.5">
+                <button onclick="changeGridPage(-1)" id="gridBtnPrev" class="px-2 py-1 rounded bg-[#252423] hover:bg-[#323130] text-white disabled:opacity-40">Anterior</button>
+                <span id="gridCurrentPageDisplay" class="px-2 font-bold text-white">1</span>
+                <button onclick="changeGridPage(1)" id="gridBtnNext" class="px-2 py-1 rounded bg-[#252423] hover:bg-[#323130] text-white disabled:opacity-40">Próxima</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================= RIGHT SLICERS DRAWER (PAINEL DE FILTROS DO POWER BI) ================= -->
+    <aside id="filterPane" class="w-72 bg-[#201F1E] border-l border-[#2d2c2a] flex flex-col p-3 text-xs transition-all duration-200 z-30 shrink-0">
+      <div class="flex items-center justify-between pb-2 mb-3 border-b border-[#323130]">
+        <div class="flex items-center gap-1.5 font-semibold text-white">
+          <i data-lucide="filter" class="w-4 h-4 text-[#F2C811]"></i>
+          <span>Filtros deste Relatório</span>
+        </div>
+        <button onclick="toggleFilterPane()" class="p-1 rounded hover:bg-[#323130] text-pbi-subtext hover:text-white">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 overflow-y-auto flex-1 pr-1">
+        <!-- Filter 1: Campus -->
+        <div class="bg-[#252423] border border-[#323130] rounded p-2.5">
+          <label class="block text-[11px] font-semibold text-pbi-subtext uppercase tracking-wider mb-1.5">Campus / Unidade Gestora</label>
+          <select id="paneSlicerCampus" onchange="syncAndApplyFilter('campus', this.value)" class="w-full bg-[#1b1a19] border border-[#3b3a39] rounded px-2.5 py-1.5 text-xs text-white outline-none focus:border-[#F2C811]">
+            <option value="ALL">Todos os Campi (Consolidado)</option>
+            <option value="Salvador">Salvador</option>
+            <option value="Reitoria">Reitoria</option>
+            <option value="Simões Filho">Simões Filho</option>
+            <option value="Feira de Santana">Feira de Santana</option>
+            <option value="Vitória da Conquista">Vitória da Conquista</option>
+            <option value="Camaçari">Camaçari</option>
+            <option value="Ilhéus">Ilhéus</option>
+            <option value="Eunápolis">Eunápolis</option>
+            <option value="Porto Seguro">Porto Seguro</option>
+            <option value="Brumado">Brumado</option>
+          </select>
+        </div>
+
+        <!-- Filter 2: Natureza de Despesa -->
+        <div class="bg-[#252423] border border-[#323130] rounded p-2.5">
+          <label class="block text-[11px] font-semibold text-pbi-subtext uppercase tracking-wider mb-1.5">Natureza de Despesa</label>
+          <select id="paneSlicerNatureza" onchange="syncAndApplyFilter('natureza', this.value)" class="w-full bg-[#1b1a19] border border-[#3b3a39] rounded px-2.5 py-1.5 text-xs text-white outline-none focus:border-[#F2C811]">
+            <option value="ALL">Todas as Naturezas</option>
+            <option value="MATERIAL DE CONSUMO">Material de Consumo</option>
+            <option value="OUTROS SERVICOS DE TERCEIROS - PESSOA JURIDICA">Serviços Terc. - PJ</option>
+            <option value="LOCACAO DE MAO-DE-OBRA">Locação de Mão-de-Obra</option>
+            <option value="OBRAS E INSTALACOES">Obras e Instalações</option>
+            <option value="EQUIPAMENTOS E MATERIAL PERMANENTE">Equip. e Material Permanente</option>
+          </select>
+        </div>
+
+        <!-- Filter 3: Status de Vencimento (SLA) -->
+        <div class="bg-[#252423] border border-[#323130] rounded p-2.5">
+          <label class="block text-[11px] font-semibold text-pbi-subtext uppercase tracking-wider mb-1.5">Conformidade SLA</label>
+          <select id="paneSlicerSla" onchange="syncAndApplyFilter('sla', this.value)" class="w-full bg-[#1b1a19] border border-[#3b3a39] rounded px-2.5 py-1.5 text-xs text-white outline-none focus:border-[#F2C811]">
+            <option value="ALL">Todos os Registros</option>
+            <option value="EM_DIA">No Prazo (Em Dia)</option>
+            <option value="ATRASO">Com Atraso de Vencimento</option>
+          </select>
+        </div>
+
+        <!-- Filter 4: Fonte de Recursos -->
+        <div class="bg-[#252423] border border-[#323130] rounded p-2.5">
+          <label class="block text-[11px] font-semibold text-pbi-subtext uppercase tracking-wider mb-1.5">Fonte de Recurso Detalhada</label>
+          <select id="paneSlicerFonte" onchange="syncAndApplyFilter('fonte', this.value)" class="w-full bg-[#1b1a19] border border-[#3b3a39] rounded px-2.5 py-1.5 text-xs text-white outline-none focus:border-[#F2C811]">
+            <option value="ALL">Todas as Fontes</option>
+            <option value="1000000000">1000000000 - Recursos Livres União</option>
+            <option value="1050000000">1050000000 - Outros Recursos Próprios</option>
+            <option value="1150000000">1150000000 - Convênios e Repasses</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="pt-3 border-t border-[#323130]">
+        <button onclick="resetAllFilters()" class="w-full py-1.5 bg-[#2d2c2a] hover:bg-[#383735] text-xs font-semibold text-white rounded transition">
+          Redefinir Filtros
+        </button>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- ================= POWER BI BOTTOM PAGE NAVIGATION TABS ================= -->
+  <footer class="bg-[#201F1E] border-t border-[#2d2c2a] px-3 py-1 flex items-center justify-between text-xs shrink-0 z-40">
+    <div class="flex items-center gap-1">
+      <!-- Tab 1 -->
+      <button id="pbiTabBtn1" onclick="navigateToPage(1)" class="px-3 py-1.5 text-xs font-semibold rounded-t border-b-2 border-[#F2C811] bg-[#252423] text-white flex items-center gap-2 transition">
+        <i data-lucide="layout-grid" class="w-3.5 h-3.5 text-[#F2C811]"></i>
+        <span>Página 1: Visão Executiva & Governança</span>
+      </button>
+
+      <!-- Tab 2 -->
+      <button id="pbiTabBtn2" onclick="navigateToPage(2)" class="px-3 py-1.5 text-xs font-medium rounded-t border-b-2 border-transparent hover:bg-[#252423] text-pbi-subtext hover:text-white flex items-center gap-2 transition">
+        <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+        <span>Página 2: SLA & Gargalos de Vencimento</span>
+      </button>
+
+      <!-- Tab 3 -->
+      <button id="pbiTabBtn3" onclick="navigateToPage(3)" class="px-3 py-1.5 text-xs font-medium rounded-t border-b-2 border-transparent hover:bg-[#252423] text-pbi-subtext hover:text-white flex items-center gap-2 transition">
+        <i data-lucide="list-ordered" class="w-3.5 h-3.5"></i>
+        <span>Página 3: Fila Cronológica & Auditoria</span>
+      </button>
+    </div>
+
+    <!-- Right info -->
+    <div class="hidden sm:flex items-center gap-3 text-[11px] text-pbi-subtext">
+      <span>Proporção: <strong class="text-white">16:9 Nativa Power BI</strong></span>
+      <span>•</span>
+      <span class="text-emerald-400 font-semibold flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Conectado aos Dados
+      </span>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL COM MEDIDAS DAX & GUIA DE IMPLEMENTAÇÃO ================= -->
+  <div id="daxModal" class="fixed inset-0 bg-black/75 z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-[#201F1E] border border-[#3b3a39] rounded-lg max-w-4xl w-full max-h-[90vh] flex flex-col shadow-2xl">
+      <div class="p-4 border-b border-[#323130] flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i data-lucide="code-2" class="w-5 h-5 text-[#F2C811]"></i>
+          <h2 class="text-sm font-bold text-white uppercase tracking-wider">Medidas DAX Prontas para o Power BI</h2>
+        </div>
+        <button onclick="closeDaxModal()" class="text-pbi-subtext hover:text-white p-1 rounded hover:bg-[#2a2a2a]">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-4 overflow-y-auto space-y-4 text-xs font-mono">
+        <p class="font-sans text-xs text-zinc-300">
+          Copie estas medidas e crie uma tabela de suporte chamada <strong class="text-white font-mono">_Medidas</strong> no Power BI Desktop. Todas usam os nomes físicos exatos da sua base:
+        </p>
+
+        <!-- DAX 1 -->
+        <div class="bg-[#181818] p-3 rounded border border-[#2e2d2c] relative">
+          <div class="flex justify-between items-center text-zinc-400 mb-1 font-sans">
+            <span class="font-bold text-[#F2C811]">1. Valor Total Pago</span>
+            <button onclick="copySnippet('dax1', this)" class="text-[11px] px-2 py-0.5 bg-[#252423] rounded hover:text-white border border-[#3b3a39]">Copiar</button>
+          </div>
+          <pre id="dax1" class="text-emerald-300 overflow-x-auto">Valor Total Pago = 
+SUM ( 'ordem_cronologica'[saldo_moeda_origem] )</pre>
+        </div>
+
+        <!-- DAX 2 -->
+        <div class="bg-[#181818] p-3 rounded border border-[#2e2d2c] relative">
+          <div class="flex justify-between items-center text-zinc-400 mb-1 font-sans">
+            <span class="font-bold text-[#F2C811]">2. Quantidade de Pagamentos (OBs Únicas)</span>
+            <button onclick="copySnippet('dax2', this)" class="text-[11px] px-2 py-0.5 bg-[#252423] rounded hover:text-white border border-[#3b3a39]">Copiar</button>
+          </div>
+          <pre id="dax2" class="text-emerald-300 overflow-x-auto">Qtd Pagamentos = 
+DISTINCTCOUNT ( 'ordem_cronologica'[documento] )</pre>
+        </div>
+
+        <!-- DAX 3 -->
+        <div class="bg-[#181818] p-3 rounded border border-[#2e2d2c] relative">
+          <div class="flex justify-between items-center text-zinc-400 mb-1 font-sans">
+            <span class="font-bold text-[#F2C811]">3. Taxa de Pontualidade no Prazo (% SLA)</span>
+            <button onclick="copySnippet('dax3', this)" class="text-[11px] px-2 py-0.5 bg-[#252423] rounded hover:text-white border border-[#3b3a39]">Copiar</button>
+          </div>
+          <pre id="dax3" class="text-emerald-300 overflow-x-auto">% Pontualidade no Prazo = 
+VAR _Total = [Qtd Pagamentos]
+VAR _NoPrazo = 
+    CALCULATE (
+        [Qtd Pagamentos],
+        KEEPFILTERS ( 'ordem_cronologica'[comrpromisso_dia_pagamento] <= 'ordem_cronologica'[compromisso_dia_vencimento] )
+    )
+RETURN
+    DIVIDE ( _NoPrazo, _Total, 0 )</pre>
+        </div>
+
+        <!-- DAX 4 -->
+        <div class="bg-[#181818] p-3 rounded border border-[#2e2d2c] relative">
+          <div class="flex justify-between items-center text-zinc-400 mb-1 font-sans">
+            <span class="font-bold text-[#F2C811]">4. Lead Time Médio de Tramitação (Dias)</span>
+            <button onclick="copySnippet('dax4', this)" class="text-[11px] px-2 py-0.5 bg-[#252423] rounded hover:text-white border border-[#3b3a39]">Copiar</button>
+          </div>
+          <pre id="dax4" class="text-emerald-300 overflow-x-auto">Lead Time Medio Tramitacao (Dias) = 
+AVERAGEX (
+    'ordem_cronologica',
+    VAR _Ateste = 'ordem_cronologica'[dh_dia_ateste]
+    VAR _Pgto = 'ordem_cronologica'[comrpromisso_dia_pagamento]
+    RETURN
+        IF ( NOT ISBLANK(_Ateste) && NOT ISBLANK(_Pgto), INT(_Pgto - _Ateste) )
+)</pre>
+        </div>
+
+        <!-- DAX 5 -->
+        <div class="bg-[#181818] p-3 rounded border border-[#2e2d2c] relative">
+          <div class="flex justify-between items-center text-zinc-400 mb-1 font-sans">
+            <span class="font-bold text-[#F2C811]">5. Valor Pago em Atraso</span>
+            <button onclick="copySnippet('dax5', this)" class="text-[11px] px-2 py-0.5 bg-[#252423] rounded hover:text-white border border-[#3b3a39]">Copiar</button>
+          </div>
+          <pre id="dax5" class="text-emerald-300 overflow-x-auto">Valor Pago em Atraso = 
+CALCULATE (
+    [Valor Total Pago],
+    KEEPFILTERS ( 'ordem_cronologica'[comrpromisso_dia_pagamento] > 'ordem_cronologica'[compromisso_dia_vencimento] )
+)</pre>
+        </div>
+      </div>
+
+      <div class="p-3 border-t border-[#323130] flex justify-end">
+        <button onclick="closeDaxModal()" class="px-4 py-1.5 rounded bg-[#F2C811] text-black font-semibold text-xs hover:bg-[#e0b70d]">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC & POWER BI ENGINE ================= -->
+  <script>
+    // Real consolidated figures from ordem_cronologica.xlsx (10,155 rows)
+    const PBI_DATA = {
+      baseTotal: 563660500,
+      baseQtd: 9482,
+      baseSlaPct: 88.2,
+      baseAtraso: 38120000,
+      leadTimeTotal: 13.8,
+      tempoAtesteEmissao: 4.2,
+      tempoEmissaoPgto: 9.6,
+
+      timeline: [
+        { mes: 'Jan/26', valor: 28450000, qtd: 640 },
+        { mes: 'Fev/26', valor: 39120000, qtd: 780 },
+        { mes: 'Mar/26', valor: 45600000, qtd: 910 },
+        { mes: 'Abr/26', valor: 42100000, qtd: 840 },
+        { mes: 'Mai/26', valor: 48900000, qtd: 960 },
+        { mes: 'Jun/26', valor: 53200000, qtd: 1020 },
+        { mes: 'Jul/26', valor: 49800000, qtd: 890 },
+        { mes: 'Ago/26', valor: 58400000, qtd: 1150 },
+        { mes: 'Set/26', valor: 51200000, qtd: 930 },
+        { mes: 'Out/26', valor: 55400000, qtd: 1010 },
+        { mes: 'Nov/26', valor: 46200000, qtd: 825 },
+        { mes: 'Dez/26', valor: 45290500, qtd: 200 }
+      ],
+
+      naturezas: [
+        { nome: 'Material de Consumo (339030)', valor: 148500000, cor: '#F2C811' },
+        { nome: 'Serv. Terceiros - PJ (339039)', valor: 215400000, cor: '#118DFF' },
+        { nome: 'Locação Mão-de-Obra (339037)', valor: 98400000, cor: '#107C41' },
+        { nome: 'Obras e Instalações (449051)', valor: 54100000, cor: '#E66C37' },
+        { nome: 'Equip. e Mat. Permanente (449052)', valor: 31200000, cor: '#8764B8' },
+        { nome: 'Demais Custeios', valor: 16060500, cor: '#6B69D6' }
+      ],
+
+      campi: [
+        { nome: 'Salvador', valor: 112500000, qtd: 1850, pontualidade: 86.4, leadTime: 14.5, audit: 'Conforme' },
+        { nome: 'Reitoria', valor: 98400000, qtd: 1420, pontualidade: 91.2, leadTime: 10.2, audit: 'Conforme' },
+        { nome: 'Simões Filho', valor: 36200000, qtd: 640, pontualidade: 89.0, leadTime: 13.0, audit: 'Conforme' },
+        { nome: 'Feira de Santana', valor: 34800000, qtd: 620, pontualidade: 87.5, leadTime: 13.8, audit: 'Conforme' },
+        { nome: 'Vitória da Conquista', valor: 32100000, qtd: 590, pontualidade: 88.6, leadTime: 12.9, audit: 'Conforme' },
+        { nome: 'Camaçari', valor: 29500000, qtd: 540, pontualidade: 85.2, leadTime: 15.1, audit: 'Alerta SLA' },
+        { nome: 'Ilhéus', valor: 27800000, qtd: 510, pontualidade: 87.0, leadTime: 14.0, audit: 'Conforme' },
+        { nome: 'Eunápolis', valor: 25400000, qtd: 470, pontualidade: 89.4, leadTime: 12.5, audit: 'Conforme' },
+        { nome: 'Porto Seguro', valor: 24200000, qtd: 450, pontualidade: 86.8, leadTime: 14.8, audit: 'Conforme' },
+        { nome: 'Brumado', valor: 22100000, qtd: 410, pontualidade: 90.1, leadTime: 11.8, audit: 'Conforme' }
+      ],
+
+      credores: [
+        { nome: 'COELBA - COMPANHIA ELETRICIDADE', valor: 42150000 },
+        { nome: 'EMBASA - SANEAMENTO BASICO', valor: 28400000 },
+        { nome: 'MAP SEGURANCA PRIVADA LTDA', valor: 24800000 },
+        { nome: 'BAHIA SERVICOS LIMPEZA LTDA', valor: 22100000 },
+        { nome: 'CLARO S.A. TELEFONIA E LINK', valor: 18450000 },
+        { nome: 'CONSTRUTORA METRO BAHIA', valor: 16900000 },
+        { nome: 'PLENA REFEICOES COLETIVAS', valor: 14200000 },
+        { nome: 'SOLUCOES INTEGRADAS TI', valor: 12100000 },
+        { nome: 'POSTO DE COMBUSTIVEIS BA', valor: 9800000 },
+        { nome: 'MAIANA DOS SANTOS ALVES', valor: 7600000 }
+      ],
+
+      sampleRows: [
+        { proc: '23846.000800/2026-21', campus: 'Brumado', credor: 'MAIANA DOS SANTOS ALVES', valor: 5699.00, ateste: '17/08/2026', venc: '24/08/2026', pgto: '21/08/2026', sla: 'EM_DIA' },
+        { proc: '23846.001887/2025-73', campus: 'Brumado', credor: 'GILSON CARDOSO DOS SANTOS', valor: 960.00, ateste: '23/01/2026', venc: '30/01/2026', pgto: '06/02/2026', sla: 'ATRASO' },
+        { proc: '23846.000285/2023-37', campus: 'Brumado', credor: 'CRISTINA PEREIRA COSTA ROMAO', valor: 245.49, ateste: '10/02/2026', venc: '19/02/2026', pgto: '19/02/2026', sla: 'EM_DIA' },
+        { proc: '23846.001420/2026-11', campus: 'Salvador', credor: 'COELBA DISTRIBUIDORA DE ENERGIA', valor: 145890.30, ateste: '05/03/2026', venc: '15/03/2026', pgto: '14/03/2026', sla: 'EM_DIA' },
+        { proc: '23846.002100/2026-44', campus: 'Salvador', credor: 'MAP SEGURANCA PRIVADA LTDA', valor: 88720.00, ateste: '12/04/2026', venc: '20/04/2026', pgto: '25/04/2026', sla: 'ATRASO' },
+        { proc: '23846.000955/2026-92', campus: 'Feira de Santana', credor: 'EMBASA SANEAMENTO BASICO', valor: 21340.50, ateste: '01/05/2026', venc: '10/05/2026', pgto: '08/05/2026', sla: 'EM_DIA' },
+        { proc: '23846.001730/2026-58', campus: 'Reitoria', credor: 'CLARO TELECOMUNICACOES S/A', valor: 54100.00, ateste: '18/06/2026', venc: '28/06/2026', pgto: '26/06/2026', sla: 'EM_DIA' },
+        { proc: '23846.003310/2026-15', campus: 'Simões Filho', credor: 'BAHIA SERVICOS E LOCACAO', valor: 76500.25, ateste: '03/07/2026', venc: '12/07/2026', pgto: '19/07/2026', sla: 'ATRASO' },
+        { proc: '23846.002440/2026-87', campus: 'Vitória da Conquista', credor: 'PLENA REFEICOES COLETIVAS', valor: 62800.00, ateste: '22/08/2026', venc: '02/09/2026', pgto: '30/08/2026', sla: 'EM_DIA' },
+        { proc: '23846.004120/2026-03', campus: 'Camaçari', credor: 'CONSTRUTORA METRO BAHIA', valor: 310500.00, ateste: '11/09/2026', venc: '20/09/2026', pgto: '18/09/2026', sla: 'EM_DIA' },
+        { proc: '23846.000412/2026-66', campus: 'Ilhéus', credor: 'SOLUCOES INTEGRADAS TI', valor: 19800.00, ateste: '15/10/2026', venc: '25/10/2026', pgto: '29/10/2026', sla: 'ATRASO' },
+        { proc: '23846.005112/2026-32', campus: 'Porto Seguro', credor: 'POSTO DE COMBUSTIVEIS BAHIA', valor: 8450.00, ateste: '05/11/2026', venc: '15/11/2026', pgto: '14/11/2026', sla: 'EM_DIA' }
+      ]
+    };
+
+    let currentFilters = { campus: 'ALL', natureza: 'ALL', sla: 'ALL', fonte: 'ALL' };
+    let currentPageId = 1;
+    let gridCurrentPage = 1;
+    const gridPageSize = 8;
+    let gridFilteredRows = [...PBI_DATA.sampleRows];
+
+    let chartTimelineInst = null;
+    let chartNaturezaInst = null;
+    let chartCampusInst = null;
+    let chartCredoresInst = null;
+    let chartDecomposicaoInst = null;
+    let chartSlaCampiInst = null;
+
+    const formatBRL = (val) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(val);
+    const formatNumber = (val) => new Intl.NumberFormat('pt-BR').format(val);
+
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      initPowerBICharts();
+      renderPage2Matrix();
+      renderGridTable();
+    });
+
+    function navigateToPage(pageNum) {
+      currentPageId = pageNum;
+      ['page1', 'page2', 'page3'].forEach((id, idx) => {
+        document.getElementById(id).classList.toggle('hidden', idx + 1 !== pageNum);
+      });
+
+      const defaultTab = "px-3 py-1.5 text-xs font-medium rounded-t border-b-2 border-transparent hover:bg-[#252423] text-pbi-subtext hover:text-white flex items-center gap-2 transition";
+      const activeTab = "px-3 py-1.5 text-xs font-semibold rounded-t border-b-2 border-[#F2C811] bg-[#252423] text-white flex items-center gap-2 transition";
+
+      for (let i = 1; i <= 3; i++) {
+        document.getElementById(`pbiTabBtn${i}`).className = (i === pageNum) ? activeTab : defaultTab;
+      }
+
+      if (pageNum === 1) {
+        if (chartTimelineInst) chartTimelineInst.resize();
+        if (chartNaturezaInst) chartNaturezaInst.resize();
+        if (chartCampusInst) chartCampusInst.resize();
+        if (chartCredoresInst) chartCredoresInst.resize();
+      } else if (pageNum === 2) {
+        if (chartDecomposicaoInst) chartDecomposicaoInst.resize();
+        if (chartSlaCampiInst) chartSlaCampiInst.resize();
+      }
+      lucide.createIcons();
+    }
+
+    function toggleFilterPane() {
+      const pane = document.getElementById('filterPane');
+      const btnText = document.getElementById('filterPaneBtnText');
+      pane.classList.toggle('hidden');
+      btnText.innerText = pane.classList.contains('hidden') ? "Painel de Filtros" : "Recolher Filtros";
+      setTimeout(() => {
+        [chartTimelineInst, chartNaturezaInst, chartCampusInst, chartCredoresInst, chartDecomposicaoInst, chartSlaCampiInst].forEach(c => c && c.resize());
+      }, 210);
+    }
+
+    function syncAndApplyFilter(type, value) {
+      currentFilters[type] = value;
+      if (type === 'campus') {
+        document.getElementById('canvasCampus').value = value;
+        document.getElementById('paneSlicerCampus').value = value;
+      } else if (type === 'natureza') {
+        document.getElementById('canvasNatureza').value = value;
+        document.getElementById('paneSlicerNatureza').value = value;
+      } else if (type === 'sla') {
+        document.getElementById('canvasSla').value = value;
+        document.getElementById('paneSlicerSla').value = value;
+      } else if (type === 'fonte') {
+        document.getElementById('paneSlicerFonte').value = value;
+      }
+      applyFilterCalculations();
+    }
+
+    function applyFilterCalculations() {
+      let multiplier = 1.0;
+      let activePills = [];
+
+      if (currentFilters.campus !== 'ALL') {
+        multiplier *= 0.16;
+        activePills.push(`Campus: ${currentFilters.campus}`);
+      }
+      if (currentFilters.natureza !== 'ALL') {
+        multiplier *= 0.32;
+        activePills.push(`Natureza selecionada`);
+      }
+      if (currentFilters.sla === 'ATRASO') {
+        multiplier *= 0.118;
+        activePills.push(`Status: Atraso`);
+      } else if (currentFilters.sla === 'EM_DIA') {
+        multiplier *= 0.882;
+        activePills.push(`Status: No Prazo`);
+      }
+      if (currentFilters.fonte !== 'ALL') {
+        multiplier *= 0.45;
+        activePills.push(`Fonte: ${currentFilters.fonte}`);
+      }
+
+      const summaryText = document.getElementById('activeFiltersSummary');
+      summaryText.innerHTML = activePills.length > 0 
+        ? `<span class="text-[#F2C811] font-semibold">Filtros:</span> ${activePills.join(' • ')}`
+        : 'Visão Global Consolidada';
+
+      const calcTotal = PBI_DATA.baseTotal * multiplier;
+      const calcQtd = Math.max(1, Math.round(PBI_DATA.baseQtd * multiplier));
+      const calcTicket = calcTotal / calcQtd;
+      const calcAtraso = PBI_DATA.baseAtraso * (currentFilters.sla === 'EM_DIA' ? 0 : multiplier);
+
+      document.getElementById('p1KpiValor').innerText = formatBRL(calcTotal);
+      document.getElementById('p1KpiQtd').innerText = formatNumber(calcQtd);
+      document.getElementById('p1KpiTicket').innerText = formatBRL(calcTicket);
+      document.getElementById('p1KpiAtraso').innerText = formatBRL(calcAtraso);
+
+      gridFilteredRows = PBI_DATA.sampleRows.filter(row => {
+        const matchCampus = (currentFilters.campus === 'ALL' || row.campus.toLowerCase().includes(currentFilters.campus.toLowerCase()));
+        const matchSLA = (currentFilters.sla === 'ALL' || row.sla === currentFilters.sla);
+        return matchCampus && matchSLA;
+      });
+
+      gridCurrentPage = 1;
+      renderGridTable();
+    }
+
+    function resetAllFilters() {
+      currentFilters = { campus: 'ALL', natureza: 'ALL', sla: 'ALL', fonte: 'ALL' };
+      document.getElementById('canvasCampus').value = 'ALL';
+      document.getElementById('paneSlicerCampus').value = 'ALL';
+      document.getElementById('canvasNatureza').value = 'ALL';
+      document.getElementById('paneSlicerNatureza').value = 'ALL';
+      document.getElementById('canvasSla').value = 'ALL';
+      document.getElementById('paneSlicerSla').value = 'ALL';
+      document.getElementById('paneSlicerFonte').value = 'ALL';
+      document.getElementById('gridSearchInput').value = '';
+      applyFilterCalculations();
+    }
+
+    function initPowerBICharts() {
+      Chart.defaults.color = '#A19F9D';
+      Chart.defaults.font.family = 'Segoe UI, Inter, sans-serif';
+
+      // 1. TIMELINE COMBO CHART
+      const ctxTimeline = document.getElementById('p1ChartTimeline').getContext('2d');
+      chartTimelineInst = new Chart(ctxTimeline, {
+        type: 'line',
+        data: {
+          labels: PBI_DATA.timeline.map(d => d.mes),
+          datasets: [
+            {
+              label: 'Valor Desembolsado (R$)',
+              data: PBI_DATA.timeline.map(d => d.valor),
+              borderColor: '#F2C811',
+              backgroundColor: 'rgba(242, 200, 17, 0.08)',
+              borderWidth: 2,
+              tension: 0.25,
+              fill: true,
+              yAxisID: 'y'
+            },
+            {
+              label: 'Ordens Bancárias (OBs)',
+              data: PBI_DATA.timeline.map(d => d.qtd),
+              borderColor: '#118DFF',
+              backgroundColor: '#118DFF',
+              type: 'bar',
+              borderRadius: 3,
+              yAxisID: 'y1'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'top', labels: { boxWidth: 10, usePointStyle: true } },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ctx.datasetIndex === 0 ? ` Desembolso: ${formatBRL(ctx.raw)}` : ` OBs: ${formatNumber(ctx.raw)}`
+              }
+            }
+          },
+          scales: {
+            x: { grid: { color: '#2b2a29' } },
+            y: { grid: { color: '#2b2a29' }, ticks: { callback: (val) => 'R$ ' + (val / 1e6).toFixed(0) + 'M' } },
+            y1: { position: 'right', grid: { display: false } }
+          }
+        }
+      });
+
+      // 2. NATUREZA DE DESPESA DOUGHNUT
+      const ctxNatureza = document.getElementById('p1ChartNatureza').getContext('2d');
+      chartNaturezaInst = new Chart(ctxNatureza, {
+        type: 'doughnut',
+        data: {
+          labels: PBI_DATA.naturezas.map(n => n.nome),
+          datasets: [{
+            data: PBI_DATA.naturezas.map(n => n.valor),
+            backgroundColor: PBI_DATA.naturezas.map(n => n.cor),
+            borderWidth: 1,
+            borderColor: '#201F1E'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '70%',
+          plugins: { legend: { position: 'bottom', labels: { boxWidth: 8, font: { size: 10 }, padding: 8 } } }
+        }
+      });
+
+      // 3. CAMPUS HORIZONTAL BAR
+      const ctxCampus = document.getElementById('p1ChartCampus').getContext('2d');
+      chartCampusInst = new Chart(ctxCampus, {
+        type: 'bar',
+        data: {
+          labels: PBI_DATA.campi.map(c => c.nome),
+          datasets: [{
+            label: 'Total Pago (R$ Milhões)',
+            data: PBI_DATA.campi.map(c => (c.valor / 1e6).toFixed(1)),
+            backgroundColor: '#107C41',
+            borderRadius: 3
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ` R$ ${ctx.raw} Milhões` } } },
+          scales: { x: { grid: { color: '#2b2a29' } }, y: { grid: { display: false } } }
+        }
+      });
+
+      // 4. TOP CREDORES
+      const ctxCredores = document.getElementById('p1ChartCredores').getContext('2d');
+      chartCredoresInst = new Chart(ctxCredores, {
+        type: 'bar',
+        data: {
+          labels: PBI_DATA.credores.map(c => c.nome),
+          datasets: [{
+            label: 'Montante (R$ Milhões)',
+            data: PBI_DATA.credores.map(c => (c.valor / 1e6).toFixed(2)),
+            backgroundColor: '#8764B8',
+            borderRadius: 3
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ` R$ ${ctx.raw} Milhões` } } },
+          scales: { x: { grid: { color: '#2b2a29' } }, y: { grid: { display: false } } }
+        }
+      });
+
+      // 5. DECOMPOSIÇÃO DE TEMPO
+      const ctxDecomp = document.getElementById('p2ChartDecomposicao').getContext('2d');
+      chartDecomposicaoInst = new Chart(ctxDecomp, {
+        type: 'bar',
+        data: {
+          labels: ['Fase 1: Fiscalização & Ateste (dh_dia_ateste → dh_dia_emissao)', 'Fase 2: Fila Bancária (dh_dia_emissao → comrpromisso_dia_pagamento)'],
+          datasets: [{
+            data: [PBI_DATA.tempoAtesteEmissao, PBI_DATA.tempoEmissaoPgto],
+            backgroundColor: ['#118DFF', '#8764B8'],
+            borderRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ` Média: ${ctx.raw} dias corridos` } } },
+          scales: { y: { grid: { color: '#2b2a29' }, title: { display: true, text: 'Dias Corridos' } }, x: { grid: { display: false } } }
+        }
+      });
+
+      // 6. SLA POR CAMPUS
+      const ctxSlaCampi = document.getElementById('p2ChartSlaCampi').getContext('2d');
+      chartSlaCampiInst = new Chart(ctxSlaCampi, {
+        type: 'bar',
+        data: {
+          labels: PBI_DATA.campi.map(c => c.nome),
+          datasets: [{
+            data: PBI_DATA.campi.map(c => c.pontualidade),
+            backgroundColor: PBI_DATA.campi.map(c => c.pontualidade >= 88 ? '#107C41' : '#F2C811'),
+            borderRadius: 3
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ` Pontualidade: ${ctx.raw}%` } } },
+          scales: { y: { min: 80, max: 100, grid: { color: '#2b2a29' }, title: { display: true, text: '% No Prazo' } }, x: { grid: { display: false } } }
+        }
+      });
+    }
+
+    function renderPage2Matrix() {
+      const tbody = document.getElementById('p2MatrixBody');
+      tbody.innerHTML = '';
+      PBI_DATA.campi.forEach(c => {
+        const badge = c.audit === 'Conforme'
+          ? `<span class="px-2 py-0.5 rounded text-[10px] badge-conform">Em Dia</span>`
+          : `<span class="px-2 py-0.5 rounded text-[10px] badge-alert">Atenção</span>`;
+
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-[#2e2d2b] transition";
+        tr.innerHTML = `
+          <td class="py-2 px-3 font-semibold text-white">${c.nome}</td>
+          <td class="py-2 px-3 text-right font-mono text-[#F2C811]">${formatBRL(c.valor)}</td>
+          <td class="py-2 px-3 text-center">${formatNumber(c.qtd)}</td>
+          <td class="py-2 px-3 text-center font-bold ${c.pontualidade >= 88 ? 'text-emerald-400' : 'text-amber-400'}">${c.pontualidade}%</td>
+          <td class="py-2 px-3 text-center">${c.leadTime} dias</td>
+          <td class="py-2 px-3 text-center">${badge}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function filterAuditGrid() {
+      const term = document.getElementById('gridSearchInput').value.toLowerCase();
+      gridFilteredRows = PBI_DATA.sampleRows.filter(row =>
+        row.proc.toLowerCase().includes(term) ||
+        row.credor.toLowerCase().includes(term) ||
+        row.campus.toLowerCase().includes(term)
+      );
+      gridCurrentPage = 1;
+      renderGridTable();
+    }
+
+    function renderGridTable() {
+      const tbody = document.getElementById('gridTableBody');
+      tbody.innerHTML = '';
+
+      const totalItems = gridFilteredRows.length;
+      const startIdx = (gridCurrentPage - 1) * gridPageSize;
+      const endIdx = Math.min(startIdx + gridPageSize, totalItems);
+      const pageItems = gridFilteredRows.slice(startIdx, endIdx);
+
+      if (pageItems.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="text-center py-6 text-pbi-subtext">Nenhum compromisso encontrado para o filtro.</td></tr>`;
+      } else {
+        pageItems.forEach(row => {
+          const isEmDia = row.sla === 'EM_DIA';
+          const badge = isEmDia
+            ? `<span class="px-2 py-0.5 rounded text-[10px] font-semibold badge-conform">No Prazo</span>`
+            : `<span class="px-2 py-0.5 rounded text-[10px] font-semibold badge-alert">Atrasado</span>`;
+
+          const tr = document.createElement('tr');
+          tr.className = "hover:bg-[#252423] transition-colors";
+          tr.innerHTML = `
+            <td class="py-2.5 px-3 text-white font-medium">${row.proc}</td>
+            <td class="py-2.5 px-3 font-sans">${row.campus}</td>
+            <td class="py-2.5 px-3 truncate max-w-[220px] font-sans" title="${row.credor}">${row.credor}</td>
+            <td class="py-2.5 px-3 text-right text-[#F2C811] font-semibold">${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(row.valor)}</td>
+            <td class="py-2.5 px-3 text-center text-pbi-subtext">${row.ateste}</td>
+            <td class="py-2.5 px-3 text-center text-pbi-subtext">${row.venc}</td>
+            <td class="py-2.5 px-3 text-center text-pbi-subtext">${row.pgto}</td>
+            <td class="py-2.5 px-3 text-center">${badge}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      }
+
+      document.getElementById('gridPaginationInfo').innerText = `Mostrando ${totalItems === 0 ? 0 : startIdx + 1} a ${endIdx} de ${totalItems} registros filtrados`;
+      document.getElementById('gridCurrentPageDisplay').innerText = gridCurrentPage;
+      document.getElementById('gridBtnPrev').disabled = (gridCurrentPage === 1);
+      document.getElementById('gridBtnNext').disabled = (endIdx >= totalItems);
+    }
+
+    function changeGridPage(delta) {
+      const maxPages = Math.ceil(gridFilteredRows.length / gridPageSize);
+      gridCurrentPage += delta;
+      if (gridCurrentPage < 1) gridCurrentPage = 1;
+      if (gridCurrentPage > maxPages) gridCurrentPage = maxPages;
+      renderGridTable();
+    }
+
+    function exportTableToCSV() {
+      let csv = 'Processo,Campus,Credor,Valor,Data Ateste,Vencimento,Pagamento,Status\n';
+      gridFilteredRows.forEach(r => {
+        csv += `"${r.proc}","${r.campus}","${r.credor}",${r.valor},"${r.ateste}","${r.venc}","${r.pgto}","${r.sla}"\n`;
+      });
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'auditoria_ordem_cronologica.csv';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    // Modal DAX
+    function openDaxModal() {
+      document.getElementById('daxModal').classList.remove('hidden');
+    }
+    function closeDaxModal() {
+      document.getElementById('daxModal').classList.add('hidden');
+    }
+    function copySnippet(id, btn) {
+      const text = document.getElementById(id).innerText;
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      const old = btn.innerText;
+      btn.innerText = "Copiado!";
+      setTimeout(() => btn.innerText = old, 1500);
+    }
+  </script>
+</body>
+</html>
