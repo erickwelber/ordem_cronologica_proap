@@ -1,0 +1,253 @@
+table fato_ordem_cronologica
+	lineageTag: d4a972a5-1a1a-406a-862f-c48555cac921
+
+	column ug_executora_codigo
+		dataType: string
+		lineageTag: 9ee3b247-4cc9-4d13-9655-af2997545eca
+		summarizeBy: none
+		sourceColumn: ug_executora_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ug_executora
+		dataType: string
+		lineageTag: d43804e7-def3-4712-a81b-edcc122c251e
+		summarizeBy: none
+		sourceColumn: ug_executora
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano_lancamento
+		dataType: string
+		lineageTag: e61f1fd9-4ae7-492c-995f-7efc62a72907
+		summarizeBy: none
+		sourceColumn: ano_lancamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column favorecido_doc_codigo
+		dataType: string
+		lineageTag: a09cf079-8958-46ba-8245-1aba8473633e
+		summarizeBy: none
+		sourceColumn: favorecido_doc_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column favorecido_doc
+		dataType: string
+		lineageTag: 38fc7446-fdc6-4f5f-a8ab-8a860749d257
+		summarizeBy: none
+		sourceColumn: favorecido_doc
+
+		annotation SummarizationSetBy = Automatic
+
+	column documento_habil
+		dataType: string
+		lineageTag: 20a876bc-c8a0-422d-a5aa-76b408f69838
+		summarizeBy: none
+		sourceColumn: documento_habil
+
+		annotation SummarizationSetBy = Automatic
+
+	column dh_credor_codigo
+		dataType: string
+		lineageTag: 4d59d039-1d87-4c02-adcb-85f6455d738c
+		summarizeBy: none
+		sourceColumn: dh_credor_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column dh_credor
+		dataType: string
+		lineageTag: ce77adf9-60f1-4849-b3f6-aab309840643
+		summarizeBy: none
+		sourceColumn: dh_credor
+
+		annotation SummarizationSetBy = Automatic
+
+	column dh_dia_ateste
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: df74d646-3289-445c-bcd4-2575ac7324bf
+		summarizeBy: none
+		sourceColumn: dh_dia_ateste
+
+		variation Variação
+			isDefault
+			relationship: 81155da1-0cc5-4bd0-bdf5-9355bb22dc57
+			defaultHierarchy: LocalDateTable_7bdb9054-40b0-409d-96ba-f944a7954cd9.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dh_dia_emissao
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7fb6df8a-1588-416d-96ed-0c901668c47e
+		summarizeBy: none
+		sourceColumn: dh_dia_emissao
+
+		variation Variação
+			isDefault
+			relationship: 72dd0a84-b6e0-4a51-870e-2aefc41ecb3d
+			defaultHierarchy: LocalDateTable_f3a98e30-a9de-4b9b-968b-0870106b511e.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dh_processo
+		dataType: string
+		lineageTag: fffa9fd4-2c5e-4706-ae10-c9fd9759a17c
+		summarizeBy: none
+		sourceColumn: dh_processo
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza_despesa_codigo
+		dataType: string
+		lineageTag: 02fa7ac6-7259-43da-b1b6-cdec29e92a40
+		summarizeBy: none
+		sourceColumn: natureza_despesa_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza_despesa
+		dataType: string
+		lineageTag: 2d3bbaea-4065-4952-a22f-b456a6f36a73
+		summarizeBy: none
+		sourceColumn: natureza_despesa
+
+		annotation SummarizationSetBy = Automatic
+
+	column fonte_recurso_detalhada_codigo
+		dataType: string
+		lineageTag: c4614313-ee26-4353-8fb5-e53a99926500
+		summarizeBy: none
+		sourceColumn: fonte_recurso_detalhada_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column fonte_recurso_detalhada
+		dataType: string
+		lineageTag: f4925ab7-662a-45dc-8135-90840ce26420
+		summarizeBy: none
+		sourceColumn: fonte_recurso_detalhada
+
+		annotation SummarizationSetBy = Automatic
+
+	column compromisso_dia_vencimento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 483d70f1-ad7b-4d47-b2b3-c7bbabd70935
+		summarizeBy: none
+		sourceColumn: compromisso_dia_vencimento
+
+		variation Variação
+			isDefault
+			relationship: 7c975633-255d-45fe-80bc-e6d387d1e545
+			defaultHierarchy: LocalDateTable_e5ab354f-d427-4925-a143-485175177516.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column compromisso_dia_transacao
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: caceceb7-af4f-4df6-a2ba-52b7a415b96a
+		summarizeBy: none
+		sourceColumn: compromisso_dia_transacao
+
+		variation Variação
+			isDefault
+			relationship: 79bb342e-58d1-4fdc-87e6-33e37187c167
+			defaultHierarchy: LocalDateTable_edab31fd-f54f-40d8-923e-32bc2fa051c0.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column comrpromisso_dia_pagamento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 69d15595-bd36-4c35-b01e-1e92e69a9472
+		summarizeBy: none
+		sourceColumn: comrpromisso_dia_pagamento
+
+		variation Variação
+			isDefault
+			relationship: 67bae2b2-5773-4d2e-981a-45cdc6d9f006
+			defaultHierarchy: LocalDateTable_d0713b33-f328-438f-a9b8-2871fc62e59d.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ob_num_ordem_pagamento
+		dataType: string
+		lineageTag: ce6cfb29-8162-4589-bf3d-53cb7ac445e6
+		summarizeBy: none
+		sourceColumn: ob_num_ordem_pagamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column documento
+		dataType: string
+		lineageTag: 8e9909c5-ce09-4470-8318-e56178e00d72
+		summarizeBy: none
+		sourceColumn: documento
+
+		annotation SummarizationSetBy = Automatic
+
+	column doc_observacao
+		dataType: string
+		lineageTag: d2f6a44a-cb96-4f00-b664-657602c20c50
+		summarizeBy: none
+		sourceColumn: doc_observacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column saldo_moeda_origem
+		dataType: double
+		lineageTag: 2d50973b-1b9f-4846-9707-c381f43d06f1
+		summarizeBy: sum
+		sourceColumn: saldo_moeda_origem
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column favorecido_doc_mascarado
+		dataType: string
+		lineageTag: b9e58dd1-cc52-44c3-be13-9d2053530251
+		summarizeBy: none
+		sourceColumn: favorecido_doc_mascarado
+
+		annotation SummarizationSetBy = Automatic
+
+	column ug_executora_nome
+		dataType: string
+		lineageTag: f6e4e96c-28ad-42b4-ae11-016701e65cd3
+		summarizeBy: none
+		sourceColumn: ug_executora_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_ordem_cronologica = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.DataSource("dsn=ordem_cronologica_proap", [HierarchicalNavigation=true]),
+				    ordem_cronologica_proap_Database = Fonte{[Name="ordem_cronologica_proap",Kind="Database"]}[Data],
+				    public_Schema = ordem_cronologica_proap_Database{[Name="public",Kind="Schema"]}[Data],
+				    fato_ordem_cronologica_Table = public_Schema{[Name="fato_ordem_cronologica",Kind="Table"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(fato_ordem_cronologica_Table,{{"dh_dia_ateste", type date}, {"dh_dia_emissao", type date}, {"compromisso_dia_vencimento", type date}, {"compromisso_dia_transacao", type date}, {"comrpromisso_dia_pagamento", type date}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

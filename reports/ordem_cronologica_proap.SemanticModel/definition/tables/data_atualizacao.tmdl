@@ -1,0 +1,24 @@
+table data_atualizacao
+	lineageTag: db769358-da1d-4a0e-b4da-cacc5cf6cbe0
+
+	column data_atualizacao
+		dataType: string
+		lineageTag: 675e0926-5036-4402-aeac-36ae9265c02b
+		summarizeBy: none
+		sourceColumn: data_atualizacao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition data_atualizacao = m
+		mode: import
+		source =
+				let
+				    Fonte = Odbc.DataSource("dsn=ordem_cronologica_proap", [HierarchicalNavigation=true]),
+				    ordem_cronologica_proap_Database = Fonte{[Name="ordem_cronologica_proap",Kind="Database"]}[Data],
+				    public_Schema = ordem_cronologica_proap_Database{[Name="public",Kind="Schema"]}[Data],
+				    data_atualizacao_Table = public_Schema{[Name="data_atualizacao",Kind="Table"]}[Data]
+				in
+				    data_atualizacao_Table
+
+	annotation PBI_ResultType = Table
+

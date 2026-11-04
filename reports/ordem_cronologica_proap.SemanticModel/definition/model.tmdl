@@ -1,0 +1,27 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["fato_ordem_cronologica","data_atualizacao"]
+
+ref table fato_ordem_cronologica
+ref table data_atualizacao
+ref table DateTableTemplate_e627c7b4-a37e-4317-ae65-9f55c649f5ab
+ref table LocalDateTable_7bdb9054-40b0-409d-96ba-f944a7954cd9
+ref table LocalDateTable_f3a98e30-a9de-4b9b-968b-0870106b511e
+ref table LocalDateTable_e5ab354f-d427-4925-a143-485175177516
+ref table LocalDateTable_edab31fd-f54f-40d8-923e-32bc2fa051c0
+ref table LocalDateTable_d0713b33-f328-438f-a9b8-2871fc62e59d
+ref table Medidas
+
+ref cultureInfo pt-BR
+

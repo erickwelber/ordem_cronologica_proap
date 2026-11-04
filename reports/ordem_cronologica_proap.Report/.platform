@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "ordem_cronologica_proap"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "44efb0c1-4500-4136-b99d-a80684ce4a3a"
+  }
+}

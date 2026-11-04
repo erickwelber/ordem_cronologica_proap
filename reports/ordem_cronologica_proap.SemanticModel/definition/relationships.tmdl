@@ -1,0 +1,25 @@
+relationship 81155da1-0cc5-4bd0-bdf5-9355bb22dc57
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_ordem_cronologica.dh_dia_ateste
+	toColumn: LocalDateTable_7bdb9054-40b0-409d-96ba-f944a7954cd9.Date
+
+relationship 72dd0a84-b6e0-4a51-870e-2aefc41ecb3d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_ordem_cronologica.dh_dia_emissao
+	toColumn: LocalDateTable_f3a98e30-a9de-4b9b-968b-0870106b511e.Date
+
+relationship 7c975633-255d-45fe-80bc-e6d387d1e545
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_ordem_cronologica.compromisso_dia_vencimento
+	toColumn: LocalDateTable_e5ab354f-d427-4925-a143-485175177516.Date
+
+relationship 79bb342e-58d1-4fdc-87e6-33e37187c167
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_ordem_cronologica.compromisso_dia_transacao
+	toColumn: LocalDateTable_edab31fd-f54f-40d8-923e-32bc2fa051c0.Date
+
+relationship 67bae2b2-5773-4d2e-981a-45cdc6d9f006
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_ordem_cronologica.comrpromisso_dia_pagamento
+	toColumn: LocalDateTable_d0713b33-f328-438f-a9b8-2871fc62e59d.Date
+

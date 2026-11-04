@@ -1,0 +1,59 @@
+table Medidas
+	lineageTag: 64dcd08c-1c27-4f60-a78f-5487d7c40620
+
+	measure 'Valor Total Pago' = SUM(fato_ordem_cronologica[saldo_moeda_origem])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 94271e91-64fb-4d8e-aa13-3166240f8937
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Qtd Pagamento' = DISTINCTCOUNT(fato_ordem_cronologica[documento])
+		formatString: #,0
+		lineageTag: 192fd68f-74f9-4797-9cf9-37bc7d375c29
+
+	measure 'Ticket Médio' = DIVIDE([Valor Total Pago],[Qtd Pagamento])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 1ae59bb9-2f0a-48b0-a415-419de93e7764
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% Pontualidade no Prazo' = ```
+			
+			VAR _Total = [Qtd Pagamento]
+			VAR _NoPrazo = 
+			    CALCULATE (
+			        [Qtd Pagamento],
+			        KEEPFILTERS (fato_ordem_cronologica[comrpromisso_dia_pagamento] <= fato_ordem_cronologica[compromisso_dia_vencimento])
+			    )
+			RETURN
+			    DIVIDE ( _NoPrazo, _Total, 0 )
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: fca861b2-9c26-4d64-b514-1bd08c00964a
+
+	measure 'Valor Pago em Atraso' =
+			
+			CALCULATE (
+			    [Valor Total Pago],
+			    KEEPFILTERS ( 'fato_ordem_cronologica'[comrpromisso_dia_pagamento] > 'fato_ordem_cronologica'[compromisso_dia_vencimento] )
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 56b777f4-88f4-4e9c-9182-413ac9042078
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Column
+		formatString: 0
+		lineageTag: 4a67d71b-0ba3-4e04-a4bc-6303db928678
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = cac89927c7ee42ebac1402e12c629ffb
+
