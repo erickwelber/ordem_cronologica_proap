@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "b566d2c9a904d4c8a092",
   "position": {
-    "x": 757.27272727272725,
-    "y": 66.36363636363636,
-    "z": 18000,
+    "x": 708.68255731819954,
+    "y": 49.9098422238918,
+    "z": 19000,
     "height": 49.999999999999993,
-    "width": 100,
-    "tabOrder": 20000
+    "width": 135.45454545454544,
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "card",
@@ -80,7 +80,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#34D399'"
+                      "Value": "'#75F977'"
                     }
                   }
                 }
@@ -219,7 +219,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#34D399'"
+                      "Value": "'#75F977'"
                     }
                   }
                 }
@@ -378,7 +378,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "04aa37e601cd1b0b50b0",
+        "name": "f92852201283ba9ed76d",
         "field": {
           "Measure": {
             "Expression": {

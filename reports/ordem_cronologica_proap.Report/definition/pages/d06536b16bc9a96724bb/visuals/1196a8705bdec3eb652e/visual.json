@@ -4,7 +4,7 @@
   "position": {
     "x": 0,
     "y": 0,
-    "z": 1000,
+    "z": 2000,
     "height": 45,
     "width": 1280,
     "tabOrder": 1000
@@ -78,7 +78,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#1C8A3F'"
+                      "Value": "'#1B1A19'"
                     }
                   }
                 }
@@ -108,5 +108,6 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "isHidden": true,
   "howCreated": "InsertVisualButton"
 }

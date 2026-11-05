@@ -3,9 +3,9 @@
   "name": "132bae534489a254db50",
   "position": {
     "x": 998.18181818181813,
-    "y": 22.727272727272727,
-    "z": 0,
-    "height": 697.27272727272725,
+    "y": 62.72727272727272,
+    "z": 1000,
+    "height": 657.27272727272725,
     "width": 281.81818181818181,
     "tabOrder": 4000
   },
@@ -74,5 +74,6 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "isHidden": true,
   "howCreated": "InsertVisualButton"
 }

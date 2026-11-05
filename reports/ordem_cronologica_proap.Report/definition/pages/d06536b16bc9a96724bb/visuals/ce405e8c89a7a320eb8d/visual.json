@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "ce405e8c89a7a320eb8d",
   "position": {
-    "x": 18.18181818181818,
-    "y": 136.36363636363635,
-    "z": 22001,
+    "x": 8.6825573181995832,
+    "y": 110.81893313298269,
+    "z": 24000,
     "height": 288.18181818181813,
-    "width": 716.36363636363626,
-    "tabOrder": 25003
+    "width": 979.99999999999989,
+    "tabOrder": 23000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -85,6 +85,13 @@
                   }
                 }
               }
+            },
+            "innerPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "20L"
+                }
+              }
             }
           }
         }
@@ -134,7 +141,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#1A853C'"
+                      "Value": "'#15B65A'"
                     }
                   }
                 }
@@ -157,6 +164,32 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            },
+            "enableDetailDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "enableBackground": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -247,7 +280,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "5D"
                 }
               }
             },
@@ -272,7 +305,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "aa94ceb4d0453c410ae7",
+        "name": "e39e223643d4644dcb7e",
         "field": {
           "Column": {
             "Expression": {
@@ -286,7 +319,7 @@
         "type": "Categorical"
       },
       {
-        "name": "87a7f3fd7c02831193a4",
+        "name": "6fcf5784e5070d1d880c",
         "field": {
           "Measure": {
             "Expression": {

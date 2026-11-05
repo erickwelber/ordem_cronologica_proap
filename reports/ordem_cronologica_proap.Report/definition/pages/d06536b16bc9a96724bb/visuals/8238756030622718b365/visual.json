@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "8238756030622718b365",
   "position": {
-    "x": 1179.2644627072857,
-    "y": 11.818181818181817,
-    "z": 3000,
+    "x": 1169,
+    "y": 13.5,
+    "z": 4000,
     "height": 20.909090909090907,
-    "width": 99.999999999999986,
+    "width": 89.999999999999986,
     "tabOrder": 2000
   },
   "visual": {
@@ -67,7 +67,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 1,
                       "Percent": 0
                     }
                   }
@@ -147,7 +147,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#1C8A3F'"
+                      "Value": "'#75F977'"
                     }
                   }
                 }
@@ -182,5 +182,28 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "cc1651fbbd00e463d7b1",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "data_atualizacao"
+                  }
+                },
+                "Property": "data_atualizacao"
+              }
+            },
+            "Function": 3
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
