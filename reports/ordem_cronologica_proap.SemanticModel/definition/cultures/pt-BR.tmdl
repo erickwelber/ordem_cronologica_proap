@@ -1,2 +1,5094 @@
 cultureInfo pt-BR
 
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "fato_ordem_cronologica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fato ordem cronologica": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fato_ordem_cronologica": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.ug_executora_codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "ug_executora_codigo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ug executora codigo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ug_executora_codigo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.ug_executora": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "ug_executora"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ug executora": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ug_executora": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.ano_lancamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "ano_lancamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano lancamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ano_lancamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.favorecido_doc_codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "favorecido_doc_codigo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "favorecido doc codigo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "favorecido_doc_codigo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.favorecido_doc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "favorecido_doc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "favorecido doc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "favorecido_doc": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.documento_habil": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "documento_habil"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "documento habil": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "documento_habil": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_credor_codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "dh_credor_codigo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dh credor codigo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh_credor_codigo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_credor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "dh_credor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dh credor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh_credor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_ateste": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "dh_dia_ateste"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dh dia ateste": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh_dia_ateste": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_ateste",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_ateste.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_ateste",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh dia ateste ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_ateste.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_ateste",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh dia ateste trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_ateste.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_ateste",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh dia ateste mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_ateste.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_ateste",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh dia ateste dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_emissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "dh_dia_emissao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dh dia emissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh_dia_emissao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_emissao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_emissao.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_emissao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh dia emissao ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_emissao.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_emissao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh dia emissao trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_emissao.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_emissao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh dia emissao mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_dia_emissao.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "dh_dia_emissao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh dia emissao dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.dh_processo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "dh_processo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dh processo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dh_processo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.natureza_despesa_codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "natureza_despesa_codigo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "natureza despesa codigo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "natureza_despesa_codigo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.natureza_despesa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "natureza_despesa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "natureza despesa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "natureza_despesa": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.fonte_recurso_detalhada_codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "fonte_recurso_detalhada_codigo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fonte recurso detalhada codigo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fonte_recurso_detalhada_codigo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.fonte_recurso_detalhada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "fonte_recurso_detalhada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fonte recurso detalhada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fonte_recurso_detalhada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_vencimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "compromisso_dia_vencimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "compromisso dia vencimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso_dia_vencimento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_vencimento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_vencimento.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_vencimento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso dia vencimento ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_vencimento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso dia vencimento trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_vencimento.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_vencimento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso dia vencimento mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_vencimento.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_vencimento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso dia vencimento dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_transacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "compromisso_dia_transacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "compromisso dia transacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso_dia_transacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_transacao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_transacao.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_transacao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso dia transacao ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_transacao.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_transacao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso dia transacao trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_transacao.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_transacao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso dia transacao mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.compromisso_dia_transacao.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "compromisso_dia_transacao",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compromisso dia transacao dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.comrpromisso_dia_pagamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "comrpromisso_dia_pagamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comrpromisso dia pagamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comrpromisso_dia_pagamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comrpromisso dia pagamento ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comrpromisso dia pagamento trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comrpromisso dia pagamento mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comrpromisso dia pagamento dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.ob_num_ordem_pagamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "ob_num_ordem_pagamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ob num ordem pagamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ob_num_ordem_pagamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ob number ordem pagamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.documento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "documento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "documento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.doc_observacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "doc_observacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "doc observacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "doc_observacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.saldo_moeda_origem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "saldo_moeda_origem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "saldo moeda origem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "saldo_moeda_origem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.favorecido_doc_mascarado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "favorecido_doc_mascarado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "favorecido doc mascarado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "favorecido_doc_mascarado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.ug_executora_nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "ug_executora_nome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ug executora nome": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ug_executora_nome": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "data_atualizacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "data_atualizacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data atualizacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data_atualizacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "information atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "data_atualizacao.data_atualizacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "data_atualizacao",
+			          "ConceptualProperty": "data_atualizacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data atualizacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data atualizacao name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data_atualizacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "information atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.column": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Column"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pilaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pillar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "support": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "buttress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "underpinning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_total_pago": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Valor Total Pago"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor total pago": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pago": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total pago": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "valor aggregate pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "valor overall pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "aggregate pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Valor Desembolsado (R$)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_pagamentos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Qtd Pagamentos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd pagamentos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ordens Bancárias": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ticket_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Ticket Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ticket médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.pontualidade_no_prazo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "% Pontualidade no Prazo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% pontualidade no prazo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage pontualidade no prazo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct pontualidade no prazo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "% pontualidade number prazo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_pago_em_atraso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Valor Pago em Atraso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor pago em atraso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_processos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Qtd Processos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd processos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_fornecedores": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Qtd Fornecedores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd fornecedores": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica.conformidade_SLA": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "Conformidade SLA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "conformidade SLA": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas.crédito_disponível": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Crédito Disponível"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Crédito Disponível": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ep_dim_autor_emendas_orcamento.autor_emendas_orcamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ep_dim_autor_emendas_orcamento",
+			          "ConceptualProperty": "autor_emendas_orcamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Autor Emendas Orçamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_ano_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos4"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "comrpromisso_dia_pagamentos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_transacao_mê_has_fato_ordem_cronologica_compromisso_dia_transacao_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_transacao.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.dia"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê3"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_transacao_trimestre_has_fato_ordem_cronologica_compromisso_dia_transacao_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_transacao.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_transacao_ano_has_fato_ordem_cronologica_compromisso_dia_transacao_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_transacao.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.ano"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.ano"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_transacao_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_transacao_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias1"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_transacao_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_transacao_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê1"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_transacao_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_transacao_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_transacao_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_transacao_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos1"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_transacao_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_transacao": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "compromisso_dia_transacaos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_vencimento_mê_has_fato_ordem_cronologica_compromisso_dia_vencimento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.dia"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê2"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_vencimento_trimestre_has_fato_ordem_cronologica_compromisso_dia_vencimento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_vencimento_ano_has_fato_ordem_cronologica_compromisso_dia_vencimento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.ano"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.ano"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos2"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_vencimento_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_vencimento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias2"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_vencimento_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_vencimento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê2"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_vencimento_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_vencimento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres2"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_vencimento_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_vencimento_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos2"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_vencimento_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_vencimento": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "compromisso_dia_vencimentos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_emissao_mê_has_fato_ordem_cronologica_dh_dia_emissao_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_emissao.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.dia"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê1"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_emissao_trimestre_has_fato_ordem_cronologica_dh_dia_emissao_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_emissao.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_emissao_ano_has_fato_ordem_cronologica_dh_dia_emissao_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_emissao.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.ano"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.ano"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos1"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_emissao_hierarquia_de_data_has_fato_ordem_cronologica_dh_dia_emissao_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias3"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_emissao_hierarquia_de_data_has_fato_ordem_cronologica_dh_dia_emissao_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê3"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_emissao_hierarquia_de_data_has_fato_ordem_cronologica_dh_dia_emissao_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres3"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_emissao_hierarquia_de_data_has_fato_ordem_cronologica_dh_dia_emissao_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos3"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_emissao_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_emissao": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dh_dia_emissaos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_ateste_mê_has_fato_ordem_cronologica_dh_dia_ateste_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_ateste.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.dia"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_ateste_trimestre_has_fato_ordem_cronologica_dh_dia_ateste_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_ateste.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_ateste_ano_has_fato_ordem_cronologica_dh_dia_ateste_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_ateste.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.ano"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.ano"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres4"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos4"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_ateste_hierarquia_de_data_has_fato_ordem_cronologica_dh_dia_ateste_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias4"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_ateste_hierarquia_de_data_has_fato_ordem_cronologica_dh_dia_ateste_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê4"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_ateste_hierarquia_de_data_has_fato_ordem_cronologica_dh_dia_ateste_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres4"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_ateste_hierarquia_de_data_has_fato_ordem_cronologica_dh_dia_ateste_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste.ano": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos4"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_dh_dia_ateste_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.dh_dia_ateste": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dh_dia_atestes_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_conformidade_SLA": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.conformidade_SLA": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.conformidade_SLA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.conformidade_SLA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_conformidade_SLA"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_qtd_fornecedores": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.qtd_fornecedores": {
+			          "Target": {
+			            "Entity": "medida.qtd_fornecedores"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_fornecedores"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_qtd_fornecedores"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_qtd_processos": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.qtd_processos": {
+			          "Target": {
+			            "Entity": "medida.qtd_processos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_processos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_qtd_processos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_valor_pago_em_atraso": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.valor_pago_em_atraso": {
+			          "Target": {
+			            "Entity": "medida.valor_pago_em_atraso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_pago_em_atraso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_valor_pago_em_atraso"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_pontualidade_no_prazo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.pontualidade_no_prazo": {
+			          "Target": {
+			            "Entity": "medida.pontualidade_no_prazo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.pontualidade_no_prazo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__pontualidade_no_prazo"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_ticket_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.ticket_médio": {
+			          "Target": {
+			            "Entity": "medida.ticket_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.ticket_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_ticket_médio"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_qtd_pagamentos": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.qtd_pagamentos": {
+			          "Target": {
+			            "Entity": "medida.qtd_pagamentos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_pagamentos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_qtd_pagamentos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_valor_total_pago": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.valor_total_pago": {
+			          "Target": {
+			            "Entity": "medida.valor_total_pago"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_total_pago"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_valor_total_pago"
+			        }
+			      ]
+			    },
+			    "medida_has_column": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.column": {
+			          "Target": {
+			            "Entity": "medida.column"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.column"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_columns"
+			        }
+			      ]
+			    },
+			    "data_atualizacao_has_data_atualizacao": {
+			      "Binding": {
+			        "ConceptualEntity": "data_atualizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_atualizacao": {
+			          "Target": {
+			            "Entity": "data_atualizacao"
+			          }
+			        },
+			        "data_atualizacao.data_atualizacao": {
+			          "Target": {
+			            "Entity": "data_atualizacao.data_atualizacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_atualizacao"
+			            },
+			            "Object": {
+			              "Role": "data_atualizacao.data_atualizacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_atualizacaos_have_data_atualizacaos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "data_atualizacao"
+			            },
+			            "Name": {
+			              "Role": "data_atualizacao.data_atualizacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_atualizacaos_are_names_IDs_of_data_atualizacaos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_ug_executora_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.ug_executora_nome": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.ug_executora_nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.ug_executora_nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_ug_executora_nome"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_favorecido_doc_mascarado": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.favorecido_doc_mascarado": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.favorecido_doc_mascarado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.favorecido_doc_mascarado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_favorecido_doc_mascarados"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_saldo_moeda_origem": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.saldo_moeda_origem": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.saldo_moeda_origem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.saldo_moeda_origem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_saldo_moeda_origems"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_doc_observacao": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.doc_observacao": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.doc_observacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.doc_observacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_doc_observacaos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_documento": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.documento": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.documento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.documento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_documentos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_ob_num_ordem_pagamento": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.ob_num_ordem_pagamento": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.ob_num_ordem_pagamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.ob_num_ordem_pagamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_ob_num_ordem_pagamentos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_comrpromisso_dia_pagamento": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_comrpromisso_dia_pagamentos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_compromisso_dia_transacao": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_transacao": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_transacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_transacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_compromisso_dia_transacaos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_compromisso_dia_vencimento": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_vencimento": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_vencimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_vencimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_compromisso_dia_vencimentos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_fonte_recurso_detalhada": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.fonte_recurso_detalhada": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.fonte_recurso_detalhada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.fonte_recurso_detalhada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_fonte_recurso_detalhadas"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_fonte_recurso_detalhada_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.fonte_recurso_detalhada_codigo": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.fonte_recurso_detalhada_codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.fonte_recurso_detalhada_codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_fonte_recurso_detalhada_codigos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_natureza_despesa": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.natureza_despesa": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.natureza_despesa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.natureza_despesa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_natureza_despesas"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_natureza_despesa_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.natureza_despesa_codigo": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.natureza_despesa_codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.natureza_despesa_codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_natureza_despesa_codigos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_dh_processo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_processo": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_processo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_processo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_dh_processos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_dh_dia_emissao": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_emissao": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_emissao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_emissao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_dh_dia_emissaos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_dh_dia_ateste": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_dia_ateste": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_dia_ateste"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_dia_ateste"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_dh_dia_atestes"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_dh_credor": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_credor": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_credor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_credor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_dh_credors"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_dh_credor_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.dh_credor_codigo": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.dh_credor_codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.dh_credor_codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_dh_credor_codigos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_documento_habil": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.documento_habil": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.documento_habil"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.documento_habil"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_documento_habils"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_favorecido_doc": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.favorecido_doc": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.favorecido_doc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.favorecido_doc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_favorecido_docs"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_favorecido_doc_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.favorecido_doc_codigo": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.favorecido_doc_codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.favorecido_doc_codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_favorecido_doc_codigos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_ano_lancamento": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.ano_lancamento": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.ano_lancamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.ano_lancamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_ano_lancamentos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_ug_executora": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.ug_executora": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.ug_executora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.ug_executora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_ug_executoras"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_ug_executora_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "fato_ordem_cronologica.ug_executora_codigo": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.ug_executora_codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.ug_executora_codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_ug_executora_codigos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_trimestre_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê4"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres4"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres4"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_mê_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			          }
+			        },
+			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias4"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê4"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê4"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

@@ -37,6 +37,22 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Home8110620926708012.svg",
+          "path": "Home8110620926708012.svg",
+          "type": "Image"
+        },
+        {
+          "name": "lixeira06384859468842752.png",
+          "path": "lixeira06384859468842752.png",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {

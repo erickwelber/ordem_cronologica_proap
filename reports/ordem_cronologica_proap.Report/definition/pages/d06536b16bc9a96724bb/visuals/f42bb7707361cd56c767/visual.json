@@ -231,23 +231,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "bdf4de8000b6e63cbb95",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Valor Total Pago"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

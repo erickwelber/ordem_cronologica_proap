@@ -374,23 +374,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ef81804548175d46db0d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Ticket Médio"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

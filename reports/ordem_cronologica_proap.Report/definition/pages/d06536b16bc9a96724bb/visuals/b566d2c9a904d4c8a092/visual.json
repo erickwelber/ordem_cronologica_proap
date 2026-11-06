@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Qtd Pagamento"
+                  "Property": "Qtd Pagamentos"
                 }
               },
               "queryRef": "Medidas.Qtd Pagamento",
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Qtd Pagamento"
+                "Property": "Qtd Pagamentos"
               }
             },
             "direction": "Descending"
@@ -374,23 +374,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f92852201283ba9ed76d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Qtd Pagamento"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

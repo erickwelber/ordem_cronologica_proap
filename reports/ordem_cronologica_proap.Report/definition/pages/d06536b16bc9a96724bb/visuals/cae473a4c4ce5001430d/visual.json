@@ -374,23 +374,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c691c66d31aae6379376",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "% Pontualidade no Prazo"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

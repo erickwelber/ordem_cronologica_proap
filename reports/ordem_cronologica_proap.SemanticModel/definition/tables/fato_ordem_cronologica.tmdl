@@ -235,6 +235,25 @@ table fato_ordem_cronologica
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Conformidade SLA' =
+			
+			VAR DataPagamento = fato_ordem_cronologica[comrpromisso_dia_pagamento]
+			VAR DataVencimento = fato_ordem_cronologica[compromisso_dia_vencimento]
+			RETURN
+			    IF (
+			        ISBLANK(DataPagamento),
+			        "Pendente / Em Aberto",
+			        IF (
+			            DataPagamento <= DataVencimento,
+			            "No Prazo (Em Dia)",
+			            "Com Atraso de Vencimento"
+			        )
+			    )
+		lineageTag: e60eef03-03ea-4617-9cca-fd62f5926421
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fato_ordem_cronologica = m
 		mode: import
 		source =

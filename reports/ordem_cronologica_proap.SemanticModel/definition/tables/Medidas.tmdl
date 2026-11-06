@@ -7,11 +7,11 @@ table Medidas
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
-	measure 'Qtd Pagamento' = DISTINCTCOUNT(fato_ordem_cronologica[documento])
+	measure 'Qtd Pagamentos' = DISTINCTCOUNT(fato_ordem_cronologica[documento])
 		formatString: #,0
 		lineageTag: 192fd68f-74f9-4797-9cf9-37bc7d375c29
 
-	measure 'Ticket Médio' = DIVIDE([Valor Total Pago],[Qtd Pagamento])
+	measure 'Ticket Médio' = DIVIDE([Valor Total Pago],[Qtd Pagamentos])
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 1ae59bb9-2f0a-48b0-a415-419de93e7764
 
@@ -19,10 +19,10 @@ table Medidas
 
 	measure '% Pontualidade no Prazo' = ```
 			
-			VAR _Total = [Qtd Pagamento]
+			VAR _Total = [Qtd Pagamentos]
 			VAR _NoPrazo = 
 			    CALCULATE (
-			        [Qtd Pagamento],
+			        [Qtd Pagamentos],
 			        KEEPFILTERS (fato_ordem_cronologica[comrpromisso_dia_pagamento] <= fato_ordem_cronologica[compromisso_dia_vencimento])
 			    )
 			RETURN
@@ -41,6 +41,17 @@ table Medidas
 		lineageTag: 56b777f4-88f4-4e9c-9182-413ac9042078
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Qtd Processos' = DISTINCTCOUNT(fato_ordem_cronologica[dh_processo])
+		formatString: #,0
+		lineageTag: ee90bde0-745a-4249-90eb-f4ca83773386
+
+	measure 'Qtd Fornecedores' = ```
+			DISTINCTCOUNT(fato_ordem_cronologica[favorecido_doc_codigo])
+			
+			```
+		formatString: #,0
+		lineageTag: 3ac0d0ed-1b0f-4da6-95e3-ec44e7e7b016
 
 	column Column
 		formatString: 0

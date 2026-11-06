@@ -301,37 +301,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e39e223643d4644dcb7e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fato_ordem_cronologica"
-              }
-            },
-            "Property": "natureza_despesa"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6fcf5784e5070d1d880c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Valor Total Pago"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

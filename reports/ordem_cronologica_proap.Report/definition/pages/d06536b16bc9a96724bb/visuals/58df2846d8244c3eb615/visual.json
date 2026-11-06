@@ -231,23 +231,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "16171c7e40d13e11b4d7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Valor Pago em Atraso"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
