@@ -21,23 +21,14 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'bg.svg'"
+                    "Value": "''"
                   }
                 }
               },
               "url": {
                 "expr": {
-                  "ResourcePackageItem": {
-                    "PackageName": "RegisteredResources",
-                    "PackageType": 1,
-                    "ItemName": "bg9059640599915544.svg"
-                  }
-                }
-              },
-              "scaling": {
-                "expr": {
                   "Literal": {
-                    "Value": "'Fit'"
+                    "Value": "''"
                   }
                 }
               }

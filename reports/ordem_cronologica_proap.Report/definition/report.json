@@ -37,17 +37,6 @@
           "type": "BaseTheme"
         }
       ]
-    },
-    {
-      "name": "RegisteredResources",
-      "type": "RegisteredResources",
-      "items": [
-        {
-          "name": "bg9059640599915544.svg",
-          "path": "bg9059640599915544.svg",
-          "type": "Image"
-        }
-      ]
     }
   ],
   "settings": {
