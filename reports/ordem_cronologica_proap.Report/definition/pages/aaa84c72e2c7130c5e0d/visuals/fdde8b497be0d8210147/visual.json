@@ -496,37 +496,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0614a3b600b8e2553255",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Valor Total Pago"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0e97c49090e0dc1682e3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fato_ordem_cronologica"
-              }
-            },
-            "Property": "ug_executora_nome"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

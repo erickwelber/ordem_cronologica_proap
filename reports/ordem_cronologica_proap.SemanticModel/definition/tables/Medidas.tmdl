@@ -53,6 +53,157 @@ table Medidas
 		formatString: #,0
 		lineageTag: 3ac0d0ed-1b0f-4da6-95e3-ec44e7e7b016
 
+	measure '-- Valor principalTotal Pagamentos Realizados' =
+			
+			DISTINCTCOUNT( fato_ordem_cronologica[documento_habil] )
+		formatString: #,0
+		lineageTag: 969a82ac-50ef-479c-b229-642553a2e2bd
+
+	measure '-- Texto de apoio (Reference Label)Subtitulo Pagamentos Realizados' = ```
+			
+			VAR _Qtd = [-- Valor principalTotal Pagamentos Realizados]
+			VAR _ValorTotal = SUM( fato_ordem_cronologica[saldo_moeda_origem] )
+			RETURN
+			    " documentos hábeis pagos · R$ " & 
+			    FORMAT(_ValorTotal / 1000000, "#,##0.0", "pt-BR") & " Mi"
+			```
+		lineageTag: 6bc66d7a-c23c-49f9-9361-9d68323c70f9
+
+	measure '-- Valor principalValor Total Pago' =
+			
+			SUM( fato_ordem_cronologica[saldo_moeda_origem] )
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: fe1e5334-87a7-48d1-999d-0a9bb25a9300
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '-- Parcela creditada diretamente ao credor (caso haja diferenciação por dedução/retenção na base, ou o valor total nominal)Subtitulo Valor Credor' =
+			
+			VAR _ValorCredor = [Valor Total Pago] -- Ajustar se houver coluna/filtro específico de retenções
+			RETURN
+			    "R$ " & FORMAT(_ValorCredor, "#,##0.00", "pt-BR") & " creditados ao credor"
+		lineageTag: 8be94a6f-1133-4b51-ad69-c14194bb1a4f
+
+	measure '-- Valor principalCredores Atendidos' =
+			
+			DISTINCTCOUNT( fato_ordem_cronologica[dh_credor_codigo] )
+		formatString: #,0
+		lineageTag: 8713c4dd-4f93-428b-9245-b58c56692682
+
+	measure '-- Média de pagamentos por credorSubtitulo Media Pagamentos Credor' =
+			
+			VAR _QtdPagamentos = [-- Valor principalTotal Pagamentos Realizados]
+			VAR _QtdCredores = [-- Valor principalCredores Atendidos]
+			VAR _Media = DIVIDE( _QtdPagamentos, _QtdCredores, 0 )
+			RETURN
+			    FORMAT(_Media, "0.0", "pt-BR") & " pagamentos por credor"
+		lineageTag: d3f9d3c7-bb89-43e6-ae9c-e198c5f74836
+
+	measure '-- Valor principal (Dias médios)Tempo Medio Pagamento' =
+			
+			AVERAGEX(
+			    fato_ordem_cronologica,
+			    DATEDIFF(
+			        fato_ordem_cronologica[dh_dia_ateste],
+			        fato_ordem_cronologica[comrpromisso_dia_pagamento],
+			        DAY
+			    )
+			)
+		lineageTag: 8e8deb0c-0c02-4235-9e05-296b2f4ec95c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '-- Formatação para exibição no cardTempo Medio Pagamento Texto' =
+			
+			FORMAT([-- Valor principal (Dias médios)Tempo Medio Pagamento], "0.0", "pt-BR") & " dias do ateste ao pagamento"
+		lineageTag: c702899e-0b9c-4f18-9011-22acc61e31a6
+
+	measure '-- Rótulo de apoioSubtitulo Tempo Medio' =
+			
+			FORMAT([-- Valor principal (Dias médios)Tempo Medio Pagamento], "0.0", "pt-BR") & " dias do ateste ao pagamento"
+		lineageTag: e1761492-cc92-4629-8690-115ec366a852
+
+	measure '-- Documentos pagos no prazoDocumentos No Prazo' =
+			
+			CALCULATE(
+			    [-- Valor principalTotal Pagamentos Realizados],
+			    fato_ordem_cronologica[comrpromisso_dia_pagamento] <= fato_ordem_cronologica[compromisso_dia_vencimento]
+			)
+		formatString: 0
+		lineageTag: 7943b091-3f94-412b-8665-461057cf3a6f
+
+	measure '-- Valor principal (%)Perc Pagos Ate Vencimento' =
+			
+			DIVIDE( [-- Documentos pagos no prazoDocumentos No Prazo], [-- Valor principalTotal Pagamentos Realizados], 0 )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 24004d94-a265-4a68-84b6-f7b3987ec009
+
+	measure '-- Subtítulo com detalhamentoSubtitulo Pagos Ate Vencimento' =
+			
+			VAR _NoPrazo = [-- Documentos pagos no prazoDocumentos No Prazo]
+			VAR _Total = [-- Valor principalTotal Pagamentos Realizados]
+			RETURN
+			    FORMAT(_NoPrazo, "#,##0", "pt-BR") & " de " & FORMAT(_Total, "#,##0", "pt-BR") & " documentos"
+		lineageTag: d73f916e-ba9f-4cba-92b0-b28924857efa
+
+	measure 'Docs Fora da Ordem' = ```
+			
+			COUNTROWS(
+			    FILTER(
+			        -- Avalia o contexto visível dos documentos hábeis
+			        SUMMARIZE(
+			            fato_ordem_cronologica,
+			            fato_ordem_cronologica[documento_habil],
+			            fato_ordem_cronologica[ug_executora_codigo],
+			            fato_ordem_cronologica[fonte_recurso_detalhada_codigo],
+			            fato_ordem_cronologica[dh_dia_ateste],
+			            fato_ordem_cronologica[comrpromisso_dia_pagamento]
+			        ),
+			        VAR _DocAtual = fato_ordem_cronologica[documento_habil]
+			        VAR _UG = fato_ordem_cronologica[ug_executora_codigo]
+			        VAR _Fonte = fato_ordem_cronologica[fonte_recurso_detalhada_codigo]
+			        VAR _AtesteAtual = fato_ordem_cronologica[dh_dia_ateste]
+			        VAR _PagamentoAtual = fato_ordem_cronologica[comrpromisso_dia_pagamento]
+			        
+			        -- Verifica se existe na base outro documento do mesmo grupo com ateste anterior que foi preterido
+			        VAR _ExistePrecedentePreterido =
+			            CALCULATE(
+			                COUNTROWS(fato_ordem_cronologica),
+			                ALL(fato_ordem_cronologica),
+			                fato_ordem_cronologica[ug_executora_codigo] = _UG,
+			                fato_ordem_cronologica[fonte_recurso_detalhada_codigo] = _Fonte,
+			                fato_ordem_cronologica[documento_habil] <> _DocAtual,
+			                fato_ordem_cronologica[dh_dia_ateste] < _AtesteAtual,
+			                fato_ordem_cronologica[comrpromisso_dia_pagamento] > _PagamentoAtual
+			            )
+			        RETURN
+			            _ExistePrecedentePreterido > 0
+			    )
+			) + 0
+			```
+		formatString: 0
+		lineageTag: 334c5de9-3a15-4cc9-8f1e-de9365946331
+
+	measure 'Perc Aderencia Ordem' =
+			
+			VAR _Total = [-- Valor principalTotal Pagamentos Realizados]
+			VAR _Fora = [Docs Fora da Ordem]
+			RETURN
+			    IF(
+			        _Total > 0,
+			        1 - DIVIDE(_Fora, _Total, 0),
+			        BLANK()
+			    )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 6274b518-7c62-42b5-8362-6f9c4202d89e
+
+	measure 'Subtitulo Fora da Ordem' =
+			
+			VAR _Fora = [Docs Fora da Ordem]
+			RETURN
+			    FORMAT(_Fora, "#,##0", "pt-BR") & " fora da ordem"
+		lineageTag: 0a5e2d35-6490-4ffa-b12e-4ba8eeb3a519
+
 	column Column
 		formatString: 0
 		lineageTag: 4a67d71b-0ba3-4e04-a4bc-6303db928678

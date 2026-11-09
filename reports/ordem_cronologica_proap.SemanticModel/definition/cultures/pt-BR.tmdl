@@ -2096,19 +2096,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "Crédito Disponível"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Crédito Disponível": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "ep_dim_autor_emendas_orcamento.autor_emendas_orcamento": {
 			      "Definition": {
@@ -2117,19 +2105,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "autor_emendas_orcamento"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Autor Emendas Orçamento": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    }
 			  },
 			  "Relationships": {

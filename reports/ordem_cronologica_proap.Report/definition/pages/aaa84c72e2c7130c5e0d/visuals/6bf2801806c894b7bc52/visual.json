@@ -556,24 +556,11 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "fonte_recurso_detalhada",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b5991e15b554d86440c1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fato_ordem_cronologica"
-              }
-            },
-            "Property": "fonte_recurso_detalhada"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
