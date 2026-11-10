@@ -6,7 +6,8 @@
     "y": 30,
     "z": 2000,
     "height": 43.636363636363633,
-    "width": 199.99999999999994
+    "width": 199.99999999999994,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "card",
@@ -189,23 +190,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "c2b6e5d564678bb5ab2e",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "94b188d02250867b9483",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "-- Parcela creditada diretamente ao credor (caso haja diferenciação por dedução/retenção na base, ou o valor total nominal)Subtitulo Valor Credor"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "c2b6e5d564678bb5ab2e"
 }

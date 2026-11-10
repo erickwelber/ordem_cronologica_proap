@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "03213fe394ead3637507",
   "position": {
-    "x": 224.54545454545453,
-    "y": 49.0007513148009,
-    "z": 27000,
+    "x": 220.79338842975199,
+    "y": 62.72727272727272,
+    "z": 20000,
     "height": 73.636363636363626,
     "width": 199.99999999999997,
-    "tabOrder": 14000
+    "tabOrder": 22000
   },
   "visualGroup": {
-    "displayName": "Grupo 3",
+    "displayName": "card_pagamentos_realizados",
     "groupMode": "ScaleMode"
   }
 }

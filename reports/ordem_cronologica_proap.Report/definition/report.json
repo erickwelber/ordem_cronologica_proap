@@ -24,6 +24,19 @@
           }
         }
       }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
     ]
   },
   "resourcePackages": [
@@ -45,6 +58,11 @@
         {
           "name": "Home8110620926708012.svg",
           "path": "Home8110620926708012.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Home8805986245955882.svg",
+          "path": "Home8805986245955882.svg",
           "type": "Image"
         },
         {
