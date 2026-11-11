@@ -204,6 +204,11 @@ table Medidas
 			    FORMAT(_Fora, "#,##0", "pt-BR") & " fora da ordem"
 		lineageTag: 0a5e2d35-6490-4ffa-b12e-4ba8eeb3a519
 
+	measure Dias_Tramitacao =
+			
+			DATEDIFF('ordem, 'ordem_cronologica'[comrpromisso_dia_pagamento], DAY)
+		lineageTag: a68d586c-1ac1-404c-9b5c-3b335c8005d6
+
 	column Column
 		formatString: 0
 		lineageTag: 4a67d71b-0ba3-4e04-a4bc-6303db928678

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "59bddc503b9154680ca6",
   "position": {
-    "x": 433.32231404958662,
+    "x": 434.930127723516,
     "y": 62.72727272727272,
-    "z": 23000,
+    "z": 21000,
     "height": 73.636363636363626,
     "width": 199.99999999999997,
-    "tabOrder": 24000
+    "tabOrder": 25000
   },
   "visualGroup": {
     "displayName": "card_credores_atendidos",

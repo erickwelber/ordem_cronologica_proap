@@ -254,6 +254,49 @@ table fato_ordem_cronologica
 
 		annotation SummarizationSetBy = Automatic
 
+	column Dias_Tramitacao =
+			
+			VAR DataFim = COALESCE('fato_ordem_cronologica'[comrpromisso_dia_pagamento], TODAY())
+			RETURN
+			DATEDIFF('fato_ordem_cronologica'[dh_dia_ateste], DataFim, DAY)
+		formatString: 0
+		lineageTag: 35c13936-0ee5-4bcd-b081-d07cc17427e4
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situacao_Prazo =
+			
+			SWITCH(
+			    TRUE(),
+			    'fato_ordem_cronologica'[Dias_Tramitacao] <= 30, "NO PRAZO (até 30 dias)",
+			    'fato_ordem_cronologica'[Dias_Tramitacao] <= 60, "ATENÇÃO (31 a 60 dias)",
+			    'fato_ordem_cronologica'[Dias_Tramitacao] > 60, "CRÍTICO (mais de 60 dias)",
+			    "Não informado"
+			)
+		lineageTag: 7e6ffa98-500e-4b8b-ba52-69c3856ee8ea
+		summarizeBy: none
+		sortByColumn: Ordem_Situacao
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordem_Situacao =
+			
+			SWITCH(
+			    TRUE(),
+			    'fato_ordem_cronologica'[Dias_Tramitacao] <= 30, 1,
+			    'fato_ordem_cronologica'[Dias_Tramitacao] <= 60, 2,
+			    'fato_ordem_cronologica'[Dias_Tramitacao] > 60, 3,
+			    4
+			)
+		formatString: 0
+		lineageTag: 6826a6e0-10ff-4ec4-b703-f39227107aea
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fato_ordem_cronologica = m
 		mode: import
 		source =

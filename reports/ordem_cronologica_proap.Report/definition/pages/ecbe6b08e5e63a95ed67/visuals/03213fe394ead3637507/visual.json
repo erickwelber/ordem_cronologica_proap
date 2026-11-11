@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "03213fe394ead3637507",
   "position": {
-    "x": 220.79338842975199,
+    "x": 225.69196093163029,
     "y": 62.72727272727272,
-    "z": 20000,
+    "z": 18000,
     "height": 73.636363636363626,
     "width": 199.99999999999997,
-    "tabOrder": 22000
+    "tabOrder": 23000
   },
   "visualGroup": {
     "displayName": "card_pagamentos_realizados",

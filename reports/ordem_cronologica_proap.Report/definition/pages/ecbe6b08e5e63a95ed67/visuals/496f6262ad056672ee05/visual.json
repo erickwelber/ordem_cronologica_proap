@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "496f6262ad056672ee05",
   "position": {
-    "x": 645.85123966942126,
+    "x": 644.16829451540173,
     "y": 62.72727272727272,
-    "z": 24000,
+    "z": 22000,
     "height": 73.636363636363626,
     "width": 199.99999999999997,
-    "tabOrder": 7000
+    "tabOrder": 6000
   },
   "visualGroup": {
     "displayName": "card_tempo_médio",

@@ -56,6 +56,11 @@
       "type": "RegisteredResources",
       "items": [
         {
+          "name": "BG5947920831646097.svg",
+          "path": "BG5947920831646097.svg",
+          "type": "Image"
+        },
+        {
           "name": "Home8110620926708012.svg",
           "path": "Home8110620926708012.svg",
           "type": "Image"

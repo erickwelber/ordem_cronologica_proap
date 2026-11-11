@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "c2b6e5d564678bb5ab2e",
   "position": {
-    "x": 8.2644628099173545,
-    "y": 62.809917355371894,
-    "z": 21000,
+    "x": 16.453794139744552,
+    "y": 62.734785875281737,
+    "z": 19000,
     "height": 73.636363636363626,
     "width": 199.99999999999997,
-    "tabOrder": 23000
+    "tabOrder": 24000
   },
   "visualGroup": {
     "displayName": "card_valor_total_pago",

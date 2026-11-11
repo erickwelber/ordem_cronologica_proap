@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "c7fb165d6d9035a0974d",
   "position": {
-    "x": 858.380165289256,
+    "x": 853.40646130728749,
     "y": 62.72727272727272,
-    "z": 25000,
+    "z": 23000,
     "height": 73.636363636363626,
     "width": 199.99999999999997,
-    "tabOrder": 8000
+    "tabOrder": 7000
   },
   "visualGroup": {
     "displayName": "card_pagos_até_o_vencimento",
