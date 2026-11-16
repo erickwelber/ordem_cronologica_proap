@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "558ed20b1c0bb976e45e",
   "position": {
-    "x": 976.36363636363626,
-    "y": 228.18181818181816,
+    "x": 1123.9323658634003,
+    "y": 228.2220742910398,
     "z": 3000,
-    "height": 73.636363636363626,
-    "width": 286.36363636363632,
+    "height": 73.620023964851555,
+    "width": 139,
     "tabOrder": 2000
   },
   "visual": {
@@ -15,32 +15,6 @@
       "queryState": {
         "Values": {
           "projections": [
-            {
-              "field": {
-                "HierarchyLevel": {
-                  "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "fato_ordem_cronologica"
-                            }
-                          },
-                          "Name": "Variação",
-                          "Property": "comrpromisso_dia_pagamento"
-                        }
-                      },
-                      "Hierarchy": "Hierarquia de datas"
-                    }
-                  },
-                  "Level": "Ano"
-                }
-              },
-              "queryRef": "fato_ordem_cronologica.comrpromisso_dia_pagamento.Variação.Hierarquia de datas.Ano",
-              "nativeQueryRef": "comrpromisso_dia_pagamento Ano",
-              "active": true
-            },
             {
               "field": {
                 "HierarchyLevel": {
@@ -79,45 +53,13 @@
         "levels": [
           {
             "queryRefs": [
-              "fato_ordem_cronologica.comrpromisso_dia_pagamento.Variação.Hierarquia de datas.Ano"
-            ],
-            "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "LocalDateTable_d0713b33-f328-438f-a9b8-2871fc62e59d"
-                    }
-                  },
-                  "Property": "Ano"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
               "fato_ordem_cronologica.comrpromisso_dia_pagamento.Variação.Hierarquia de datas.Mês"
             ],
             "isCollapsed": true,
             "isPinned": true
           }
         ],
-        "root": {
-          "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "2026L"
-                  }
-                }
-              ],
-              "isToggled": true
-            }
-          ]
-        }
+        "root": {}
       }
     ],
     "objects": {
@@ -198,7 +140,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'📆 Ano'"
+                  "Value": "'📆 Mês'"
                 }
               }
             },
@@ -600,31 +542,6 @@
           }
         },
         "type": "Categorical"
-      },
-      {
-        "name": "7c82604372e4d29e3827",
-        "field": {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "fato_ordem_cronologica"
-                      }
-                    },
-                    "Name": "Variação",
-                    "Property": "comrpromisso_dia_pagamento"
-                  }
-                },
-                "Hierarchy": "Hierarquia de datas"
-              }
-            },
-            "Level": "Ano"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
