@@ -3,11 +3,11 @@
   "name": "1b79b3c2eccba96d81ac",
   "position": {
     "x": 976.69231793369727,
-    "y": 228.2220742910398,
-    "z": 25003,
+    "y": 228.02471375693489,
+    "z": 27000,
     "height": 73.620023964851555,
     "width": 139,
-    "tabOrder": 21003
+    "tabOrder": 23000
   },
   "visual": {
     "visualType": "slicer",
@@ -311,7 +311,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Filtro_Ano'"
+                  "Value": "'filtro_exercício'"
                 }
               }
             },

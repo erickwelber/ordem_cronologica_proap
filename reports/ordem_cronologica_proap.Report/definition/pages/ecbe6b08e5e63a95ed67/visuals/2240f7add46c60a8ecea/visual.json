@@ -3,11 +3,11 @@
   "name": "2240f7add46c60a8ecea",
   "position": {
     "x": 976.36363636363626,
-    "y": 310.515700617859,
-    "z": 25001,
+    "y": 310.57854238781226,
+    "z": 25000,
     "height": 110.90909090909091,
     "width": 286.36363636363632,
-    "tabOrder": 21001
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "slicer",
@@ -112,7 +112,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'🏦 Situação do Prazo'"
+                  "Value": "'🕒 Situação do Prazo'"
                 }
               }
             },
@@ -225,7 +225,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Filtro_Unidade'"
+                  "Value": "'filtro_situação_do_prazo'"
                 }
               }
             },

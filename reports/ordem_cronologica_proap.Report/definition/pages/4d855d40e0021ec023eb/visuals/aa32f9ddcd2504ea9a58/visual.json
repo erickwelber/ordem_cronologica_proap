@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "aa32f9ddcd2504ea9a58",
+  "position": {
+    "x": 1062.6446280991731,
+    "y": 62.72727272727272,
+    "z": 21000,
+    "height": 73.636363636363626,
+    "width": 200.00000000000023,
+    "tabOrder": 24000
+  },
+  "visualGroup": {
+    "displayName": "card_valor_em_atraso",
+    "groupMode": "ScaleMode"
+  }
+}

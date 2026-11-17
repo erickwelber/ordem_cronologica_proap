@@ -3,11 +3,11 @@
   "name": "ce6ff4509100a30c8396",
   "position": {
     "x": 976.69231793369727,
-    "y": 509.25449674490869,
-    "z": 25002,
+    "y": 509.38018028481514,
+    "z": 26000,
     "height": 70.024937655860342,
     "width": 286.38403990024938,
-    "tabOrder": 21002
+    "tabOrder": 22000
   },
   "visual": {
     "visualType": "slicer",
@@ -112,7 +112,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'📝 Credor / Fornecedor'"
+                  "Value": "'👥 Credor / Fornecedor'"
                 }
               }
             },
@@ -168,6 +168,11 @@
               }
             }
           }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
         }
       ]
     },
@@ -249,7 +254,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Filtro_Unidade'"
+                  "Value": "'filtro_credor_fornecedor'"
                 }
               }
             },

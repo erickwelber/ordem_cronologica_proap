@@ -3,7 +3,7 @@
   "name": "5ccfe456b578c0610e9d",
   "position": {
     "x": 976.36363636363626,
-    "y": 588.18181818181824,
+    "y": 588.33892260670132,
     "z": 5000,
     "height": 70,
     "width": 285.45454545454544,
@@ -112,7 +112,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'📝 Fonte de Recurso Detalhada'"
+                  "Value": "'💰 Fonte de Recurso Detalhada'"
                 }
               }
             },
@@ -254,7 +254,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Filtro_Unidade'"
+                  "Value": "'filtro_fonte_de_recurso_detalhada'"
                 }
               }
             },

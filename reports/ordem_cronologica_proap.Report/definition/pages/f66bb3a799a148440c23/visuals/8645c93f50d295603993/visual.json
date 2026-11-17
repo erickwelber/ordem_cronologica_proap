@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "8645c93f50d295603993",
+  "position": {
+    "x": 16.453794139744552,
+    "y": 62.734785875281737,
+    "z": 17000,
+    "height": 73.636363636363626,
+    "width": 199.99999999999997,
+    "tabOrder": 25000
+  },
+  "visualGroup": {
+    "displayName": "card_valor_total_pago",
+    "groupMode": "ScaleMode"
+  }
+}
