@@ -4,7 +4,7 @@
   "position": {
     "x": 1123.9323658634003,
     "y": 228.2220742910398,
-    "z": 2000,
+    "z": 4000,
     "height": 73.620023964851555,
     "width": 139,
     "tabOrder": 1000
@@ -28,7 +28,7 @@
                             }
                           },
                           "Name": "Variação",
-                          "Property": "comrpromisso_dia_pagamento"
+                          "Property": "compromisso_dia_pagamento"
                         }
                       },
                       "Hierarchy": "Hierarquia de datas"
@@ -37,31 +37,14 @@
                   "Level": "Mês"
                 }
               },
-              "queryRef": "fato_ordem_cronologica.comrpromisso_dia_pagamento.Variação.Hierarquia de datas.Mês",
-              "nativeQueryRef": "comrpromisso_dia_pagamento Mês",
+              "queryRef": "fato_ordem_cronologica.compromisso_dia_pagamento.Variação.Hierarquia de datas.Mês",
+              "nativeQueryRef": "compromisso_dia_pagamento Mês",
               "active": true
             }
           ]
         }
       }
     },
-    "expansionStates": [
-      {
-        "roles": [
-          "Values"
-        ],
-        "levels": [
-          {
-            "queryRefs": [
-              "fato_ordem_cronologica.comrpromisso_dia_pagamento.Variação.Hierarquia de datas.Mês"
-            ],
-            "isCollapsed": true,
-            "isPinned": true
-          }
-        ],
-        "root": {}
-      }
-    ],
     "objects": {
       "data": [
         {

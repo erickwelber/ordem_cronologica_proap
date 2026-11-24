@@ -4,10 +4,10 @@
   "position": {
     "x": 225.69196093163029,
     "y": 62.72727272727272,
-    "z": 16000,
+    "z": 18000,
     "height": 73.636363636363626,
     "width": 199.99999999999997,
-    "tabOrder": 25000
+    "tabOrder": 29000
   },
   "visualGroup": {
     "displayName": "card_pagamentos_realizados",

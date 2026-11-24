@@ -23,7 +23,7 @@ table Medidas
 			VAR _NoPrazo = 
 			    CALCULATE (
 			        [Qtd Pagamentos],
-			        KEEPFILTERS (fato_ordem_cronologica[comrpromisso_dia_pagamento] <= fato_ordem_cronologica[compromisso_dia_vencimento])
+			        KEEPFILTERS (fato_ordem_cronologica[compromisso_dia_pagamento] <= fato_ordem_cronologica[compromisso_dia_vencimento])
 			    )
 			RETURN
 			    DIVIDE ( _NoPrazo, _Total, 0 )
@@ -35,7 +35,7 @@ table Medidas
 			
 			CALCULATE (
 			    [Valor Total Pago],
-			    KEEPFILTERS ( 'fato_ordem_cronologica'[comrpromisso_dia_pagamento] > 'fato_ordem_cronologica'[compromisso_dia_vencimento] )
+			    KEEPFILTERS ( 'fato_ordem_cronologica'[compromisso_dia_pagamento] > 'fato_ordem_cronologica'[compromisso_dia_vencimento] )
 			)
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 56b777f4-88f4-4e9c-9182-413ac9042078
@@ -105,7 +105,7 @@ table Medidas
 			    fato_ordem_cronologica,
 			    DATEDIFF(
 			        fato_ordem_cronologica[dh_dia_ateste],
-			        fato_ordem_cronologica[comrpromisso_dia_pagamento],
+			        fato_ordem_cronologica[compromisso_dia_pagamento],
 			        DAY
 			    )
 			)
@@ -127,7 +127,7 @@ table Medidas
 			
 			CALCULATE(
 			    [-- Valor principalTotal Pagamentos Realizados],
-			    fato_ordem_cronologica[comrpromisso_dia_pagamento] <= fato_ordem_cronologica[compromisso_dia_vencimento]
+			    fato_ordem_cronologica[compromisso_dia_pagamento] <= fato_ordem_cronologica[compromisso_dia_vencimento]
 			)
 		formatString: 0
 		lineageTag: 7943b091-3f94-412b-8665-461057cf3a6f
@@ -146,68 +146,105 @@ table Medidas
 			    FORMAT(_NoPrazo, "#,##0", "pt-BR") & " de " & FORMAT(_Total, "#,##0", "pt-BR") & " documentos"
 		lineageTag: d73f916e-ba9f-4cba-92b0-b28924857efa
 
-	measure 'Docs Fora da Ordem' = ```
-			
-			COUNTROWS(
-			    FILTER(
-			        -- Avalia o contexto visível dos documentos hábeis
-			        SUMMARIZE(
-			            fato_ordem_cronologica,
-			            fato_ordem_cronologica[documento_habil],
-			            fato_ordem_cronologica[ug_executora_codigo],
-			            fato_ordem_cronologica[fonte_recurso_detalhada_codigo],
-			            fato_ordem_cronologica[dh_dia_ateste],
-			            fato_ordem_cronologica[comrpromisso_dia_pagamento]
-			        ),
-			        VAR _DocAtual = fato_ordem_cronologica[documento_habil]
-			        VAR _UG = fato_ordem_cronologica[ug_executora_codigo]
-			        VAR _Fonte = fato_ordem_cronologica[fonte_recurso_detalhada_codigo]
-			        VAR _AtesteAtual = fato_ordem_cronologica[dh_dia_ateste]
-			        VAR _PagamentoAtual = fato_ordem_cronologica[comrpromisso_dia_pagamento]
-			        
-			        -- Verifica se existe na base outro documento do mesmo grupo com ateste anterior que foi preterido
-			        VAR _ExistePrecedentePreterido =
-			            CALCULATE(
-			                COUNTROWS(fato_ordem_cronologica),
-			                ALL(fato_ordem_cronologica),
-			                fato_ordem_cronologica[ug_executora_codigo] = _UG,
-			                fato_ordem_cronologica[fonte_recurso_detalhada_codigo] = _Fonte,
-			                fato_ordem_cronologica[documento_habil] <> _DocAtual,
-			                fato_ordem_cronologica[dh_dia_ateste] < _AtesteAtual,
-			                fato_ordem_cronologica[comrpromisso_dia_pagamento] > _PagamentoAtual
-			            )
-			        RETURN
-			            _ExistePrecedentePreterido > 0
-			    )
-			) + 0
-			```
+	measure '-- Total_Pagamentos' = COUNTROWS(fato_ordem_cronologica)
 		formatString: 0
-		lineageTag: 334c5de9-3a15-4cc9-8f1e-de9365946331
+		lineageTag: 2c39521a-cda7-49f7-8be2-f31ffde5ce2b
 
-	measure 'Perc Aderencia Ordem' =
+	measure '-- Qtd_No_Prazo' = ```
 			
-			VAR _Total = [-- Valor principalTotal Pagamentos Realizados]
-			VAR _Fora = [Docs Fora da Ordem]
+			CALCULATE(
+			    [-- Total_Pagamentos], 
+			    fato_ordem_cronologica[Dias_Pagamento] <= 30
+			)
+			```
+		formatString: #,0
+		lineageTag: fbb546fd-5754-4970-84e1-d0035ac5c0b4
+
+	measure '-- Detalhe_No_Prazo' =
+			
+			"até 30 dias • " & FORMAT(DIVIDE([-- Qtd_No_Prazo], [-- Total_Pagamentos]), "0.0%")
+		lineageTag: 18e83a21-8f11-4299-8ceb-63db1c1fd082
+
+	measure '-- Qtd_Atencao' = ```
+			
+			CALCULATE(
+			    [-- Total_Pagamentos], 
+			    fato_ordem_cronologica[Dias_Pagamento] >= 31 && fato_ordem_cronologica[Dias_Pagamento] <= 60
+			)
+			```
+		formatString: #,0
+		lineageTag: aa1338c6-0628-41d8-9447-dca9d4c58159
+
+	measure '-- Detalhe_Atencao' =
+			
+			"31 a 60 dias • " & FORMAT(DIVIDE([-- Qtd_Atencao], [-- Total_Pagamentos]), "0.0%")
+		lineageTag: a502881c-2861-4b91-991a-89ba7c058729
+
+	measure '-- Qtd_Critico' = ```
+			
+			CALCULATE(
+			    [-- Total_Pagamentos], 
+			    fato_ordem_cronologica[Dias_Pagamento] > 60
+			)
+			```
+		formatString: #,0
+		lineageTag: 799c7068-9986-4273-8ff4-dc2f286610dd
+
+	measure '-- Detalhe_Critico' =
+			
+			"mais de 60 dias • " & FORMAT(DIVIDE([-- Qtd_Critico], [-- Total_Pagamentos]), "0.0%")
+		lineageTag: 14020398-49c0-43cd-957f-360d2478a828
+
+	measure '-- Pct_Faixa' =
+			
+			VAR QtdFaixa = COUNTROWS(fato_ordem_cronologica)
+			VAR QtdTotal = CALCULATE(COUNTROWS(fato_ordem_cronologica), ALL(dFaixas))
 			RETURN
-			    IF(
-			        _Total > 0,
-			        1 - DIVIDE(_Fora, _Total, 0),
-			        BLANK()
-			    )
+			DIVIDE(QtdFaixa, QtdTotal, 0)
 		formatString: 0.00%;-0.00%;0.00%
-		lineageTag: 6274b518-7c62-42b5-8362-6f9c4202d89e
+		lineageTag: 3b7145f6-30e0-4fd1-8408-d8cf1f11e50e
 
-	measure 'Subtitulo Fora da Ordem' =
+	measure '-- Media_Ateste_Liquidacao' =
 			
-			VAR _Fora = [Docs Fora da Ordem]
+			AVERAGEX(
+			    fato_ordem_cronologica,
+			    DATEDIFF(fato_ordem_cronologica[dh_dia_ateste], fato_ordem_cronologica[dh_dia_emissao], DAY)
+			)
+		lineageTag: e4977df4-1ab4-4094-8d34-9a75cd8d22d8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '-- Media_Liquidacao_Pagamento' =
+			
+			AVERAGEX(
+			    fato_ordem_cronologica,
+			    DATEDIFF(fato_ordem_cronologica[dh_dia_emissao], fato_ordem_cronologica[compromisso_dia_pagamento], DAY)
+			)
+		lineageTag: ffcf595e-2a32-43e2-ad38-e87531cce4c7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '-- Tempo_Medio_Pgto' =
+			
+			AVERAGEX(
+			    fato_ordem_cronologica,
+			    DATEDIFF(fato_ordem_cronologica[dh_dia_ateste], fato_ordem_cronologica[compromisso_dia_pagamento], DAY)
+			)
+		lineageTag: c8c5cf67-f147-4511-ae5f-4161bda9da38
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '-- Cor_Tempo_Medio' =
+			
+			VAR Media = [-- Tempo_Medio_Pgto]
 			RETURN
-			    FORMAT(_Fora, "#,##0", "pt-BR") & " fora da ordem"
-		lineageTag: 0a5e2d35-6490-4ffa-b12e-4ba8eeb3a519
-
-	measure Dias_Tramitacao =
-			
-			DATEDIFF('ordem, 'ordem_cronologica'[comrpromisso_dia_pagamento], DAY)
-		lineageTag: a68d586c-1ac1-404c-9b5c-3b335c8005d6
+			SWITCH(
+			    TRUE(),
+			    Media <= 30, "#109C19",
+			    Media <= 60, "#F2B01E",
+			    "#D64545"
+			)
+		lineageTag: 826aec7b-c922-45f8-b0bb-c7af9181c3c2
 
 	column Column
 		formatString: 0

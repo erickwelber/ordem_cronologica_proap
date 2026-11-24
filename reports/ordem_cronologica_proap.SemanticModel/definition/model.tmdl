@@ -11,17 +11,18 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["fato_ordem_cronologica","data_atualizacao"]
+annotation PBI_QueryOrder = ["data_atualizacao","fato_ordem_cronologica","dFaixas"]
 
-ref table fato_ordem_cronologica
 ref table data_atualizacao
-ref table DateTableTemplate_e627c7b4-a37e-4317-ae65-9f55c649f5ab
-ref table LocalDateTable_7bdb9054-40b0-409d-96ba-f944a7954cd9
-ref table LocalDateTable_f3a98e30-a9de-4b9b-968b-0870106b511e
-ref table LocalDateTable_e5ab354f-d427-4925-a143-485175177516
-ref table LocalDateTable_edab31fd-f54f-40d8-923e-32bc2fa051c0
-ref table LocalDateTable_d0713b33-f328-438f-a9b8-2871fc62e59d
 ref table Medidas
+ref table fato_ordem_cronologica
+ref table DateTableTemplate_bc9d901f-235f-4350-a116-8bf0676b992d
+ref table LocalDateTable_b60dc11d-1a7c-4c7b-a456-cc0e156a5b33
+ref table LocalDateTable_79008f2e-b76d-4f0b-92e7-c7f3922f12f2
+ref table LocalDateTable_d1d7ae91-bde0-49ce-b57a-1457a16a2147
+ref table LocalDateTable_1e5b85e2-dde6-4359-89d0-1217ef9c754a
+ref table LocalDateTable_361dc1b3-c7f6-48d1-b6eb-62f7ba0ae7ac
+ref table dFaixas
 
 ref cultureInfo pt-BR
 

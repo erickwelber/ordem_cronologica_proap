@@ -27,7 +27,7 @@
                 }
               },
               "queryRef": "fato_ordem_cronologica.Situacao_Prazo",
-              "nativeQueryRef": "Situacao_Prazo",
+              "nativeQueryRef": "Situacao_Prazo1",
               "active": true
             }
           ]

@@ -28,7 +28,7 @@
                             }
                           },
                           "Name": "Variação",
-                          "Property": "comrpromisso_dia_pagamento"
+                          "Property": "compromisso_dia_pagamento"
                         }
                       },
                       "Hierarchy": "Hierarquia de datas"
@@ -37,8 +37,8 @@
                   "Level": "Ano"
                 }
               },
-              "queryRef": "fato_ordem_cronologica.comrpromisso_dia_pagamento.Variação.Hierarquia de datas.Ano",
-              "nativeQueryRef": "comrpromisso_dia_pagamento Ano",
+              "queryRef": "fato_ordem_cronologica.compromisso_dia_pagamento.Variação.Hierarquia de datas.Ano",
+              "nativeQueryRef": "compromisso_dia_pagamento Ano",
               "active": true
             }
           ]
@@ -59,7 +59,7 @@
                           }
                         },
                         "Name": "Variação",
-                        "Property": "comrpromisso_dia_pagamento"
+                        "Property": "compromisso_dia_pagamento"
                       }
                     },
                     "Hierarchy": "Hierarquia de datas"
@@ -74,23 +74,6 @@
         "isDefaultSort": true
       }
     },
-    "expansionStates": [
-      {
-        "roles": [
-          "Values"
-        ],
-        "levels": [
-          {
-            "queryRefs": [
-              "fato_ordem_cronologica.comrpromisso_dia_pagamento.Variação.Hierarquia de datas.Ano"
-            ],
-            "isCollapsed": true,
-            "isPinned": true
-          }
-        ],
-        "root": {}
-      }
-    ],
     "objects": {
       "data": [
         {

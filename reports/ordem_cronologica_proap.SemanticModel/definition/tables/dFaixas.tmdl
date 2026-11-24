@@ -1,0 +1,52 @@
+table dFaixas
+	lineageTag: 388880e2-8eec-43df-9184-ac49638f2c1f
+
+	column Ordem
+		dataType: int64
+		formatString: 0
+		lineageTag: 4cb2e3ed-8c93-4cf8-a04d-fb67522c11ee
+		summarizeBy: none
+		sourceColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Faixa
+		dataType: string
+		lineageTag: e45521bb-c83f-44a2-9118-c6257622bbbb
+		summarizeBy: none
+		sourceColumn: Faixa
+		sortByColumn: Ordem
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: eef15835-9278-4d37-9113-71c4b49a8575
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cor
+		dataType: string
+		lineageTag: e8a793c5-fe74-4732-ba78-be8376b52344
+		summarizeBy: none
+		sourceColumn: Cor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dFaixas = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\erick\Documents\PROAP\Dashboards\ordem_cronologica_proap\data\processed\faixas.xlsx"), null, true),
+				    dFaixas_Sheet = Fonte{[Item="dFaixas",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(dFaixas_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Ordem", Int64.Type}, {"Faixa", type text}, {"Status", type text}, {"Cor", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

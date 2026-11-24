@@ -5,6 +5,1100 @@ cultureInfo pt-BR
 			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
+			    "data_atualizacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "data_atualizacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data atualizacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data_atualizacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "information atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "data_atualizacao.data_atualizacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "data_atualizacao",
+			          "ConceptualProperty": "data_atualizacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data atualizacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data atualizacao name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data_atualizacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "information atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record atualizacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.column": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Column"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pilaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pillar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "support": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "buttress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "underpinning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_total_pago": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Valor Total Pago"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor total pago": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pago": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total pago": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "valor aggregate pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "valor overall pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "aggregate pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Valor Desembolsado (R$)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_pagamentos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Qtd Pagamentos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd pagamentos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ordens Bancárias": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ticket_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Ticket Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ticket médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.pontualidade_no_prazo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "% Pontualidade no Prazo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% pontualidade no prazo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage pontualidade no prazo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct pontualidade no prazo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "% pontualidade number prazo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_pago_em_atraso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Valor Pago em Atraso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor pago em atraso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_processos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Qtd Processos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd processos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_fornecedores": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Qtd Fornecedores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd fornecedores": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_principalTotal_pagamentos_realizados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Valor principalTotal Pagamentos Realizados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- valor principalTotal pagamentos realizados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor principalTotal pagamentos realizados": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Texto de apoio (Reference Label)Subtitulo Pagamentos Realizados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- texto de apoio (reference label)subtitulo pagamentos realizados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "texto de apoio (reference label)subtitulo pagamentos realizados": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_principalValor_total_pago": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Valor principalValor Total Pago"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- valor principalValor total pago": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor principalValor total pago": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "valor principalvalor aggregate pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "valor principalvalor overall pago": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Valor Total Pago": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Parcela creditada diretamente ao credor (caso haja diferenciação por dedução/retenção na base, ou o valor total nominal)Subtitulo Valor Credor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- parcela creditada diretamente ao credor (caso haja diferenciação por dedução/retenção na base, ou o valor total nominal)subtitulo valor credor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "-- parcela creditada diretamente ao credor (caso haja diferenciação por dedução": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "- - parcela creditada diretamente ao credor ( caso haja diferenciação por dedução retenção na base , ou o valor total nominal ) subtitulo valor credor": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "retenção na base, ou o valor total nominal)subtitulo valor credor": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "parcela creditada diretamente ao credor (caso haja diferenciação por dedução": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "parcela creditada diretamente ao credor ( caso haja diferenciação por dedução retenção na base , ou o valor total nominal ) subtitulo valor credor": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_principalCredores_atendidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Valor principalCredores Atendidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- valor principalCredores atendidos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor principalCredores atendidos": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Média de pagamentos por credorSubtitulo Media Pagamentos Credor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- média de pagamentos por credorSubtitulo media pagamentos credor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "média de pagamentos por credorSubtitulo media pagamentos credor": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_principal_dias_médiostempo_medio_pagamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Valor principal (Dias médios)Tempo Medio Pagamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- valor principal (dias médios)tempo medio pagamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor principal (dias médios)tempo medio pagamento": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.formatação_para_exibição_no_cardTempo_medio_pagamento_texto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Formatação para exibição no cardTempo Medio Pagamento Texto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- formatação para exibição no cardTempo medio pagamento texto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "formatação para exibição no cardTempo medio pagamento texto": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.rótulo_de_apoioSubtitulo_tempo_medio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Rótulo de apoioSubtitulo Tempo Medio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- rótulo de apoioSubtitulo tempo medio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rótulo de apoioSubtitulo tempo medio": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.documentos_pagos_no_prazoDocumentos_no_prazo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Documentos pagos no prazoDocumentos No Prazo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- documentos pagos no prazoDocumentos no prazo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "documentos pagos no prazoDocumentos no prazo": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.valor_principal_perc_pagos_ate_vencimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Valor principal (%)Perc Pagos Ate Vencimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- valor principal (%)perc pagos ate vencimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valor principal (%)perc pagos ate vencimento": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Subtítulo com detalhamentoSubtitulo Pagos Ate Vencimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- subtítulo com detalhamentoSubtitulo pagos ate vencimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "subtítulo com detalhamentoSubtitulo pagos ate vencimento": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Total_Pagamentos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Total_Pagamentos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Total_Pagamentos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Pagamentos": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Qtd_No_Prazo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Qtd_No_Prazo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Qtd_No_Prazo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Qtd_No_Prazo": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Detalhe_No_Prazo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Detalhe_No_Prazo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Detalhe_No_Prazo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Detalhe_No_Prazo": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Qtd_Atencao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Qtd_Atencao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Qtd_Atencao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Qtd_Atencao": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Detalhe_Atencao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Detalhe_Atencao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Detalhe_Atencao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Detalhe_Atencao": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Qtd_Critico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Qtd_Critico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Qtd_Critico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Qtd_Critico": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Detalhe_Critico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Detalhe_Critico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Detalhe_Critico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Detalhe_Critico": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Pct_Faixa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Pct_Faixa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Pct_Faixa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Pct_Faixa": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Media_Ateste_Liquidacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Media_Ateste_Liquidacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Media_Ateste_Liquidacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Media_Ateste_Liquidacao": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Do Ateste à Liquidação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.Media_Liquidacao_Pagamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "-- Media_Liquidacao_Pagamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "-- Media_Liquidacao_Pagamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Media_Liquidacao_Pagamento": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Da Liquidação ao Pagamento (OB)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
 			    "fato_ordem_cronologica": {
 			      "Definition": {
 			        "Binding": {
@@ -1192,22 +2286,22 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica.comrpromisso_dia_pagamento": {
+			    "fato_ordem_cronologica.compromisso_dia_pagamento": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_ordem_cronologica",
-			          "ConceptualProperty": "comrpromisso_dia_pagamento"
+			          "ConceptualProperty": "compromisso_dia_pagamento"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "comrpromisso dia pagamento": {
+			          "compromisso dia pagamento": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "comrpromisso_dia_pagamento": {
+			          "compromisso_dia_pagamento": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
@@ -1222,11 +2316,11 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			    "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_ordem_cronologica",
-			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSource": "compromisso_dia_pagamento",
 			          "VariationSet": "Variação",
 			          "Hierarchy": "Hierarquia de datas"
 			        }
@@ -1310,11 +2404,11 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano": {
+			    "fato_ordem_cronologica.compromisso_dia_pagamento.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_ordem_cronologica",
-			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSource": "compromisso_dia_pagamento",
 			          "VariationSet": "Variação",
 			          "Hierarchy": "Hierarquia de datas",
 			          "HierarchyLevel": "Ano"
@@ -1328,17 +2422,17 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "comrpromisso dia pagamento ano": {
+			          "compromisso dia pagamento ano": {
 			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre": {
+			    "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_ordem_cronologica",
-			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSource": "compromisso_dia_pagamento",
 			          "VariationSet": "Variação",
 			          "Hierarchy": "Hierarquia de datas",
 			          "HierarchyLevel": "Trimestre"
@@ -1352,17 +2446,17 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "comrpromisso dia pagamento trimestre": {
+			          "compromisso dia pagamento trimestre": {
 			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê": {
+			    "fato_ordem_cronologica.compromisso_dia_pagamento.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_ordem_cronologica",
-			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSource": "compromisso_dia_pagamento",
 			          "VariationSet": "Variação",
 			          "Hierarchy": "Hierarquia de datas",
 			          "HierarchyLevel": "Mês"
@@ -1376,17 +2470,17 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "comrpromisso dia pagamento mê": {
+			          "compromisso dia pagamento mê": {
 			            "State": "Generated"
 			          }
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia": {
+			    "fato_ordem_cronologica.compromisso_dia_pagamento.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_ordem_cronologica",
-			          "VariationSource": "comrpromisso_dia_pagamento",
+			          "VariationSource": "compromisso_dia_pagamento",
 			          "VariationSet": "Variação",
 			          "Hierarchy": "Hierarquia de datas",
 			          "HierarchyLevel": "Dia"
@@ -1400,7 +2494,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "comrpromisso dia pagamento dia": {
+			          "compromisso dia pagamento dia": {
 			            "State": "Generated"
 			          }
 			        }
@@ -1557,554 +2651,25 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "data_atualizacao": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "data_atualizacao"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "data atualizacao": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data_atualizacao": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "information atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "fact atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "info atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "statistic atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "document atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "figure atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "record atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "data_atualizacao.data_atualizacao": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "data_atualizacao",
-			          "ConceptualProperty": "data_atualizacao"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "data atualizacao": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data atualizacao name": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data_atualizacao": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "information atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "fact atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "info atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "statistic atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "document atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "figure atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "record atualizacao": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ],
-			      "NameType": "Name"
-			    },
-			    "medida": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "medida": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "medida.column": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Column"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "column": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "pilaster": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "pier": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "pillar": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "post": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "support": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "stake": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "pole": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "buttress": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "underpinning": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "contribution": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        }
-			      ]
-			    },
-			    "medida.valor_total_pago": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Valor Total Pago"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valor total pago": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "pago": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "total pago": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "valor aggregate pago": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "valor overall pago": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "aggregate pago": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "overall pago": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "Valor Desembolsado (R$)": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "medida.qtd_pagamentos": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Qtd Pagamentos"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "qtd pagamentos": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Ordens Bancárias": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "medida.ticket_médio": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Ticket Médio"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "ticket médio": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "medida.pontualidade_no_prazo": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "% Pontualidade no Prazo"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "% pontualidade no prazo": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "percentage pontualidade no prazo": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "pct pontualidade no prazo": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "% pontualidade number prazo": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        }
-			      ]
-			    },
-			    "medida.valor_pago_em_atraso": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Valor Pago em Atraso"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valor pago em atraso": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "medida.qtd_processos": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Qtd Processos"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "qtd processos": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "medida.qtd_fornecedores": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Qtd Fornecedores"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "qtd fornecedores": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica.conformidade_SLA": {
+			    "fato_ordem_cronologica.dias_tramitacao": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_ordem_cronologica",
-			          "ConceptualProperty": "Conformidade SLA"
+			          "ConceptualProperty": "Dias_Tramitacao"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "conformidade SLA": {
+			          "dias tramitacao": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dias_Tramitacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
 			          }
 			        }
 			      ]
@@ -2125,29 +2690,6 @@ cultureInfo pt-BR
 			        },
 			        {
 			          "Situacao_Prazo": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica.dias_tramitacao": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "fato_ordem_cronologica",
-			          "ConceptualProperty": "Dias_Tramitacao"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dias tramitacao": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Dias_Tramitacao": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
@@ -2178,411 +2720,246 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medida.valor_principalTotal_pagamentos_realizados": {
+			    "fato_ordem_cronologica.dias_pagamento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Valor principalTotal Pagamentos Realizados"
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "Dias_Pagamento"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "-- valor principalTotal pagamentos realizados": {
+			          "dias pagamento": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "valor principalTotal pagamentos realizados": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Texto de apoio (Reference Label)Subtitulo Pagamentos Realizados"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- texto de apoio (reference label)subtitulo pagamentos realizados": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "texto de apoio (reference label)subtitulo pagamentos realizados": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.valor_principalValor_total_pago": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Valor principalValor Total Pago"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- valor principalValor total pago": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "valor principalValor total pago": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "valor principalvalor aggregate pago": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "valor principalvalor overall pago": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "Valor Total Pago": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "medida.parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Parcela creditada diretamente ao credor (caso haja diferenciação por dedução/retenção na base, ou o valor total nominal)Subtitulo Valor Credor"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- parcela creditada diretamente ao credor (caso haja diferenciação por dedução/retenção na base, ou o valor total nominal)subtitulo valor credor": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "-- parcela creditada diretamente ao credor (caso haja diferenciação por dedução": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "- - parcela creditada diretamente ao credor ( caso haja diferenciação por dedução retenção na base , ou o valor total nominal ) subtitulo valor credor": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "retenção na base, ou o valor total nominal)subtitulo valor credor": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "parcela creditada diretamente ao credor (caso haja diferenciação por dedução": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "parcela creditada diretamente ao credor ( caso haja diferenciação por dedução retenção na base , ou o valor total nominal ) subtitulo valor credor": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.valor_principalCredores_atendidos": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Valor principalCredores Atendidos"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- valor principalCredores atendidos": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "valor principalCredores atendidos": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Média de pagamentos por credorSubtitulo Media Pagamentos Credor"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- média de pagamentos por credorSubtitulo media pagamentos credor": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "média de pagamentos por credorSubtitulo media pagamentos credor": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.valor_principal_dias_médiostempo_medio_pagamento": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Valor principal (Dias médios)Tempo Medio Pagamento"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- valor principal (dias médios)tempo medio pagamento": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "valor principal (dias médios)tempo medio pagamento": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.formatação_para_exibição_no_cardTempo_medio_pagamento_texto": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Formatação para exibição no cardTempo Medio Pagamento Texto"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- formatação para exibição no cardTempo medio pagamento texto": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "formatação para exibição no cardTempo medio pagamento texto": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.rótulo_de_apoioSubtitulo_tempo_medio": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Rótulo de apoioSubtitulo Tempo Medio"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- rótulo de apoioSubtitulo tempo medio": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "rótulo de apoioSubtitulo tempo medio": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.documentos_pagos_no_prazoDocumentos_no_prazo": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Documentos pagos no prazoDocumentos No Prazo"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- documentos pagos no prazoDocumentos no prazo": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "documentos pagos no prazoDocumentos no prazo": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.valor_principal_perc_pagos_ate_vencimento": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Valor principal (%)Perc Pagos Ate Vencimento"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- valor principal (%)perc pagos ate vencimento": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "valor principal (%)perc pagos ate vencimento": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "-- Subtítulo com detalhamentoSubtitulo Pagos Ate Vencimento"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "-- subtítulo com detalhamentoSubtitulo pagos ate vencimento": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "subtítulo com detalhamentoSubtitulo pagos ate vencimento": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "medida.docs_fora_da_ordem": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Docs Fora da Ordem"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "docs fora da ordem": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "medida.perc_aderencia_ordem": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Perc Aderencia Ordem"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "perc aderencia ordem": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "medida.subtitulo_fora_da_ordem": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Subtitulo Fora da Ordem"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "subtitulo fora da ordem": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "medida.dias_tramitacao": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Dias_Tramitacao"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dias tramitacao": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Dias_Tramitacao": {
+			          "Dias_Pagamento": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        }
 			      ]
+			    },
+			    "fato_ordem_cronologica.Faixa_Intervalo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_ordem_cronologica",
+			          "ConceptualProperty": "-- Faixa_Intervalo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "-- Faixa_Intervalo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Faixa_Intervalo": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "d_faixa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dFaixas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d faixa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dFaixas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_faixa.ordem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dFaixas",
+			          "ConceptualProperty": "Ordem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordem": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_faixa.faixa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dFaixas",
+			          "ConceptualProperty": "Faixa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "faixa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_faixa.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dFaixas",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "d_faixa.cor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dFaixas",
+			          "ConceptualProperty": "Cor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_trimestre_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_mê": {
+			    "fato_ordem_cronologica_compromisso_dia_pagamento_trimestre_has_fato_ordem_cronologica_compromisso_dia_pagamento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.mê": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
 			          }
 			        }
 			      },
@@ -2590,10 +2967,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -2603,10 +2980,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -2616,7 +2993,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -2626,7 +3003,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -2635,20 +3012,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_ano_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_trimestre": {
+			    "fato_ordem_cronologica_compromisso_dia_pagamento_ano_has_fato_ordem_cronologica_compromisso_dia_pagamento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.ano": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.ano"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			          }
 			        }
 			      },
@@ -2656,10 +3033,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.ano"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -2669,10 +3046,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -2682,7 +3059,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -2692,7 +3069,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -2701,20 +3078,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_dia": {
+			    "fato_ordem_cronologica_compromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_pagamento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.dia": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.dia"
 			          }
 			        }
 			      },
@@ -2722,10 +3099,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -2734,20 +3111,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_mê": {
+			    "fato_ordem_cronologica_compromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_pagamento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.mê": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
 			          }
 			        }
 			      },
@@ -2755,10 +3132,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -2767,20 +3144,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_trimestre": {
+			    "fato_ordem_cronologica_compromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_pagamento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			          }
 			        }
 			      },
@@ -2788,10 +3165,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.trimestre"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -2800,20 +3177,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_ano": {
+			    "fato_ordem_cronologica_compromisso_dia_pagamento_hierarquia_de_data_has_fato_ordem_cronologica_compromisso_dia_pagamento_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.ano": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.ano"
 			          }
 			        }
 			      },
@@ -2821,10 +3198,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.ano"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -2833,20 +3210,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_has_hierarquia_de_data": {
+			    "fato_ordem_cronologica_compromisso_dia_pagamento_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -2854,15 +3231,15 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.hierarquia_de_data"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "comrpromisso_dia_pagamentos_have_hierarquia_de_data"
+			          "ID": "compromisso_dia_pagamentos_have_hierarquia_de_data"
 			        }
 			      ]
 			    },
@@ -4318,40 +4695,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medida_has_dias_tramitacao": {
-			      "Binding": {
-			        "ConceptualEntity": "Medidas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "medida": {
-			          "Target": {
-			            "Entity": "medida"
-			          }
-			        },
-			        "medida.dias_tramitacao": {
-			          "Target": {
-			            "Entity": "medida.dias_tramitacao"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "medida"
-			            },
-			            "Object": {
-			              "Role": "medida.dias_tramitacao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "medidas_have_dias_tramitacao"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_subtitulo_fora_da_ordem": {
+			    "fato_ordem_cronologica_has_d_faixa": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
@@ -4362,9 +4706,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_ordem_cronologica"
 			          }
 			        },
-			        "medida.subtitulo_fora_da_ordem": {
+			        "d_faixa": {
 			          "Target": {
-			            "Entity": "medida.subtitulo_fora_da_ordem"
+			            "Entity": "d_faixa"
 			          }
 			        }
 			      },
@@ -4375,16 +4719,161 @@ cultureInfo pt-BR
 			              "Role": "fato_ordem_cronologica"
 			            },
 			            "Object": {
-			              "Role": "medida.subtitulo_fora_da_ordem"
+			              "Role": "d_faixa"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_subtitulo_fora_da_ordem"
+			          "ID": "fato_ordem_cronologicas_have_d_faixas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_faixa"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_faixas_have_fato_ordem_cronologicas"
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_has_medida_perc_aderencia_ordem": {
+			    "d_faixa_has_cor": {
+			      "Binding": {
+			        "ConceptualEntity": "dFaixas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_faixa": {
+			          "Target": {
+			            "Entity": "d_faixa"
+			          }
+			        },
+			        "d_faixa.cor": {
+			          "Target": {
+			            "Entity": "d_faixa.cor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_faixa"
+			            },
+			            "Object": {
+			              "Role": "d_faixa.cor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_faixas_have_cors"
+			        }
+			      ]
+			    },
+			    "d_faixa_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "dFaixas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_faixa": {
+			          "Target": {
+			            "Entity": "d_faixa"
+			          }
+			        },
+			        "d_faixa.status": {
+			          "Target": {
+			            "Entity": "d_faixa.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_faixa"
+			            },
+			            "Object": {
+			              "Role": "d_faixa.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_faixas_have_statuses"
+			        }
+			      ]
+			    },
+			    "d_faixa_has_faixa": {
+			      "Binding": {
+			        "ConceptualEntity": "dFaixas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_faixa": {
+			          "Target": {
+			            "Entity": "d_faixa"
+			          }
+			        },
+			        "d_faixa.faixa": {
+			          "Target": {
+			            "Entity": "d_faixa.faixa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_faixa"
+			            },
+			            "Object": {
+			              "Role": "d_faixa.faixa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_faixas_have_faixas"
+			        }
+			      ]
+			    },
+			    "d_faixa_has_ordem": {
+			      "Binding": {
+			        "ConceptualEntity": "dFaixas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_faixa": {
+			          "Target": {
+			            "Entity": "d_faixa"
+			          }
+			        },
+			        "d_faixa.ordem": {
+			          "Target": {
+			            "Entity": "d_faixa.ordem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_faixa"
+			            },
+			            "Object": {
+			              "Role": "d_faixa.ordem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_faixas_have_ordems"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_dias_pagamento": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
@@ -4395,9 +4884,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_ordem_cronologica"
 			          }
 			        },
-			        "medida.perc_aderencia_ordem": {
+			        "fato_ordem_cronologica.dias_pagamento": {
 			          "Target": {
-			            "Entity": "medida.perc_aderencia_ordem"
+			            "Entity": "fato_ordem_cronologica.dias_pagamento"
 			          }
 			        }
 			      },
@@ -4408,441 +4897,12 @@ cultureInfo pt-BR
 			              "Role": "fato_ordem_cronologica"
 			            },
 			            "Object": {
-			              "Role": "medida.perc_aderencia_ordem"
+			              "Role": "fato_ordem_cronologica.dias_pagamento"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_perc_aderencia_ordem"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_docs_fora_da_ordem": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.docs_fora_da_ordem": {
-			          "Target": {
-			            "Entity": "medida.docs_fora_da_ordem"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.docs_fora_da_ordem"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_docs_fora_da_ordem"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento": {
-			          "Target": {
-			            "Entity": "medida.subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_valor_principal_perc_pagos_ate_vencimento": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.valor_principal_perc_pagos_ate_vencimento": {
-			          "Target": {
-			            "Entity": "medida.valor_principal_perc_pagos_ate_vencimento"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.valor_principal_perc_pagos_ate_vencimento"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__valor_principal_perc_pagos_ate_vencimento"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_documentos_pagos_no_prazoDocumentos_no_prazo": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.documentos_pagos_no_prazoDocumentos_no_prazo": {
-			          "Target": {
-			            "Entity": "medida.documentos_pagos_no_prazoDocumentos_no_prazo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.documentos_pagos_no_prazoDocumentos_no_prazo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__documentos_pagos_no_prazoDocumentos_no_prazo"
-			        }
-			      ]
-			    },
-			    "medida_has_rótulo_de_apoioSubtitulo_tempo_medio": {
-			      "Binding": {
-			        "ConceptualEntity": "Medidas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "medida": {
-			          "Target": {
-			            "Entity": "medida"
-			          }
-			        },
-			        "medida.rótulo_de_apoioSubtitulo_tempo_medio": {
-			          "Target": {
-			            "Entity": "medida.rótulo_de_apoioSubtitulo_tempo_medio"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "medida"
-			            },
-			            "Object": {
-			              "Role": "medida.rótulo_de_apoioSubtitulo_tempo_medio"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "medidas_have__rótulo_de_apoioSubtitulo_tempo_medio"
-			        }
-			      ]
-			    },
-			    "medida_has_formatação_para_exibição_no_cardTempo_medio_pagamento_texto": {
-			      "Binding": {
-			        "ConceptualEntity": "Medidas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "medida": {
-			          "Target": {
-			            "Entity": "medida"
-			          }
-			        },
-			        "medida.formatação_para_exibição_no_cardTempo_medio_pagamento_texto": {
-			          "Target": {
-			            "Entity": "medida.formatação_para_exibição_no_cardTempo_medio_pagamento_texto"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "medida"
-			            },
-			            "Object": {
-			              "Role": "medida.formatação_para_exibição_no_cardTempo_medio_pagamento_texto"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "medidas_have__formatação_para_exibição_no_cardTempo_medio_pagamento_texto"
-			        }
-			      ]
-			    },
-			    "medida_has_valor_principal_dias_médiostempo_medio_pagamento": {
-			      "Binding": {
-			        "ConceptualEntity": "Medidas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "medida": {
-			          "Target": {
-			            "Entity": "medida"
-			          }
-			        },
-			        "medida.valor_principal_dias_médiostempo_medio_pagamento": {
-			          "Target": {
-			            "Entity": "medida.valor_principal_dias_médiostempo_medio_pagamento"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "medida"
-			            },
-			            "Object": {
-			              "Role": "medida.valor_principal_dias_médiostempo_medio_pagamento"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "medidas_have__valor_principal_dias_médiostempo_medio_pagamento"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor": {
-			          "Target": {
-			            "Entity": "medida.média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_valor_principalCredores_atendidos": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.valor_principalCredores_atendidos": {
-			          "Target": {
-			            "Entity": "medida.valor_principalCredores_atendidos"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.valor_principalCredores_atendidos"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__valor_principalCredores_atendidos"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor": {
-			          "Target": {
-			            "Entity": "medida.parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_valor_principalValor_total_pago": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.valor_principalValor_total_pago": {
-			          "Target": {
-			            "Entity": "medida.valor_principalValor_total_pago"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.valor_principalValor_total_pago"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__valor_principalValor_total_pago"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados": {
-			          "Target": {
-			            "Entity": "medida.texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_valor_principalTotal_pagamentos_realizados": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.valor_principalTotal_pagamentos_realizados": {
-			          "Target": {
-			            "Entity": "medida.valor_principalTotal_pagamentos_realizados"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.valor_principalTotal_pagamentos_realizados"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__valor_principalTotal_pagamentos_realizados"
+			          "ID": "fato_ordem_cronologicas_have_dias_pagamentos"
 			        }
 			      ]
 			    },
@@ -4879,39 +4939,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_has_dias_tramitacao": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "fato_ordem_cronologica.dias_tramitacao": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica.dias_tramitacao"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "fato_ordem_cronologica.dias_tramitacao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_dias_tramitacaos"
-			        }
-			      ]
-			    },
 			    "fato_ordem_cronologica_has_situacao_prazo": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
@@ -4945,7 +4972,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_has_conformidade_SLA": {
+			    "fato_ordem_cronologica_has_dias_tramitacao": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
@@ -4956,9 +4983,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_ordem_cronologica"
 			          }
 			        },
-			        "fato_ordem_cronologica.conformidade_SLA": {
+			        "fato_ordem_cronologica.dias_tramitacao": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.conformidade_SLA"
+			            "Entity": "fato_ordem_cronologica.dias_tramitacao"
 			          }
 			        }
 			      },
@@ -4969,322 +4996,12 @@ cultureInfo pt-BR
 			              "Role": "fato_ordem_cronologica"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.conformidade_SLA"
+			              "Role": "fato_ordem_cronologica.dias_tramitacao"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_conformidade_SLA"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_qtd_fornecedores": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.qtd_fornecedores": {
-			          "Target": {
-			            "Entity": "medida.qtd_fornecedores"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.qtd_fornecedores"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_qtd_fornecedores"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_qtd_processos": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.qtd_processos": {
-			          "Target": {
-			            "Entity": "medida.qtd_processos"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.qtd_processos"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_qtd_processos"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_valor_pago_em_atraso": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.valor_pago_em_atraso": {
-			          "Target": {
-			            "Entity": "medida.valor_pago_em_atraso"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.valor_pago_em_atraso"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_valor_pago_em_atraso"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_pontualidade_no_prazo": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.pontualidade_no_prazo": {
-			          "Target": {
-			            "Entity": "medida.pontualidade_no_prazo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.pontualidade_no_prazo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have__pontualidade_no_prazo"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_ticket_médio": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.ticket_médio": {
-			          "Target": {
-			            "Entity": "medida.ticket_médio"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.ticket_médio"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_ticket_médio"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_qtd_pagamentos": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.qtd_pagamentos": {
-			          "Target": {
-			            "Entity": "medida.qtd_pagamentos"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.qtd_pagamentos"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_qtd_pagamentos"
-			        }
-			      ]
-			    },
-			    "fato_ordem_cronologica_has_medida_valor_total_pago": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_ordem_cronologica": {
-			          "Target": {
-			            "Entity": "fato_ordem_cronologica"
-			          }
-			        },
-			        "medida.valor_total_pago": {
-			          "Target": {
-			            "Entity": "medida.valor_total_pago"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_ordem_cronologica"
-			            },
-			            "Object": {
-			              "Role": "medida.valor_total_pago"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_valor_total_pago"
-			        }
-			      ]
-			    },
-			    "medida_has_column": {
-			      "Binding": {
-			        "ConceptualEntity": "Medidas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "medida": {
-			          "Target": {
-			            "Entity": "medida"
-			          }
-			        },
-			        "medida.column": {
-			          "Target": {
-			            "Entity": "medida.column"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "medida"
-			            },
-			            "Object": {
-			              "Role": "medida.column"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "medidas_have_columns"
-			        }
-			      ]
-			    },
-			    "data_atualizacao_has_data_atualizacao": {
-			      "Binding": {
-			        "ConceptualEntity": "data_atualizacao"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "data_atualizacao": {
-			          "Target": {
-			            "Entity": "data_atualizacao"
-			          }
-			        },
-			        "data_atualizacao.data_atualizacao": {
-			          "Target": {
-			            "Entity": "data_atualizacao.data_atualizacao"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "data_atualizacao"
-			            },
-			            "Object": {
-			              "Role": "data_atualizacao.data_atualizacao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_atualizacaos_have_data_atualizacaos"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "data_atualizacao"
-			            },
-			            "Name": {
-			              "Role": "data_atualizacao.data_atualizacao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_atualizacaos_are_names_IDs_of_data_atualizacaos"
+			          "ID": "fato_ordem_cronologicas_have_dias_tramitacaos"
 			        }
 			      ]
 			    },
@@ -5486,7 +5203,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_has_comrpromisso_dia_pagamento": {
+			    "fato_ordem_cronologica_has_compromisso_dia_pagamento": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_ordem_cronologica"
 			      },
@@ -5497,9 +5214,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_ordem_cronologica"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento"
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento"
 			          }
 			        }
 			      },
@@ -5510,12 +5227,12 @@ cultureInfo pt-BR
 			              "Role": "fato_ordem_cronologica"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_ordem_cronologicas_have_comrpromisso_dia_pagamentos"
+			          "ID": "fato_ordem_cronologicas_have_compromisso_dia_pagamentos"
 			        }
 			      ]
 			    },
@@ -6080,20 +5797,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_ordem_cronologica_comrpromisso_dia_pagamento_mê_has_fato_ordem_cronologica_comrpromisso_dia_pagamento_dia": {
+			    "medida_has_Media_Liquidacao_Pagamento": {
 			      "Binding": {
-			        "ConceptualEntity": "fato_ordem_cronologica"
+			        "ConceptualEntity": "Medidas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê": {
+			        "medida": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			            "Entity": "medida"
 			          }
 			        },
-			        "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia": {
+			        "medida.Media_Liquidacao_Pagamento": {
 			          "Target": {
-			            "Entity": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			            "Entity": "medida.Media_Liquidacao_Pagamento"
 			          }
 			        }
 			      },
@@ -6101,10 +5818,1046 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			              "Role": "medida"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			              "Role": "medida.Media_Liquidacao_Pagamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have__Media_Liquidacao_Pagamento"
+			        }
+			      ]
+			    },
+			    "medida_has_Media_Ateste_Liquidacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.Media_Ateste_Liquidacao": {
+			          "Target": {
+			            "Entity": "medida.Media_Ateste_Liquidacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.Media_Ateste_Liquidacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have__Media_Ateste_Liquidacao"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_Pct_Faixa": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.Pct_Faixa": {
+			          "Target": {
+			            "Entity": "medida.Pct_Faixa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.Pct_Faixa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__Pct_Faixa"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_Detalhe_Critico": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.Detalhe_Critico": {
+			          "Target": {
+			            "Entity": "medida.Detalhe_Critico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.Detalhe_Critico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__Detalhe_Critico"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_Qtd_Critico": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.Qtd_Critico": {
+			          "Target": {
+			            "Entity": "medida.Qtd_Critico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.Qtd_Critico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__Qtd_Critico"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_Detalhe_Atencao": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.Detalhe_Atencao": {
+			          "Target": {
+			            "Entity": "medida.Detalhe_Atencao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.Detalhe_Atencao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__Detalhe_Atencao"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_Qtd_Atencao": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.Qtd_Atencao": {
+			          "Target": {
+			            "Entity": "medida.Qtd_Atencao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.Qtd_Atencao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__Qtd_Atencao"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_Detalhe_No_Prazo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.Detalhe_No_Prazo": {
+			          "Target": {
+			            "Entity": "medida.Detalhe_No_Prazo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.Detalhe_No_Prazo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__Detalhe_No_Prazo"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_Qtd_No_Prazo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.Qtd_No_Prazo": {
+			          "Target": {
+			            "Entity": "medida.Qtd_No_Prazo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.Qtd_No_Prazo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__Qtd_No_Prazo"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_Total_Pagamentos": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.Total_Pagamentos": {
+			          "Target": {
+			            "Entity": "medida.Total_Pagamentos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.Total_Pagamentos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__Total_Pagamentos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento": {
+			          "Target": {
+			            "Entity": "medida.subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__subtítulo_com_detalhamentoSubtitulo_pagos_ate_vencimento"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_valor_principal_perc_pagos_ate_vencimento": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.valor_principal_perc_pagos_ate_vencimento": {
+			          "Target": {
+			            "Entity": "medida.valor_principal_perc_pagos_ate_vencimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_principal_perc_pagos_ate_vencimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__valor_principal_perc_pagos_ate_vencimento"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_documentos_pagos_no_prazoDocumentos_no_prazo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.documentos_pagos_no_prazoDocumentos_no_prazo": {
+			          "Target": {
+			            "Entity": "medida.documentos_pagos_no_prazoDocumentos_no_prazo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.documentos_pagos_no_prazoDocumentos_no_prazo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__documentos_pagos_no_prazoDocumentos_no_prazo"
+			        }
+			      ]
+			    },
+			    "medida_has_rótulo_de_apoioSubtitulo_tempo_medio": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.rótulo_de_apoioSubtitulo_tempo_medio": {
+			          "Target": {
+			            "Entity": "medida.rótulo_de_apoioSubtitulo_tempo_medio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.rótulo_de_apoioSubtitulo_tempo_medio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have__rótulo_de_apoioSubtitulo_tempo_medio"
+			        }
+			      ]
+			    },
+			    "medida_has_formatação_para_exibição_no_cardTempo_medio_pagamento_texto": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.formatação_para_exibição_no_cardTempo_medio_pagamento_texto": {
+			          "Target": {
+			            "Entity": "medida.formatação_para_exibição_no_cardTempo_medio_pagamento_texto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.formatação_para_exibição_no_cardTempo_medio_pagamento_texto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have__formatação_para_exibição_no_cardTempo_medio_pagamento_texto"
+			        }
+			      ]
+			    },
+			    "medida_has_valor_principal_dias_médiostempo_medio_pagamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.valor_principal_dias_médiostempo_medio_pagamento": {
+			          "Target": {
+			            "Entity": "medida.valor_principal_dias_médiostempo_medio_pagamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_principal_dias_médiostempo_medio_pagamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have__valor_principal_dias_médiostempo_medio_pagamento"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor": {
+			          "Target": {
+			            "Entity": "medida.média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__média_de_pagamentos_por_credorSubtitulo_media_pagamentos_credor"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_valor_principalCredores_atendidos": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.valor_principalCredores_atendidos": {
+			          "Target": {
+			            "Entity": "medida.valor_principalCredores_atendidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_principalCredores_atendidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__valor_principalCredores_atendidos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor": {
+			          "Target": {
+			            "Entity": "medida.parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__parcela_creditada_diretamente_ao_credor_caso_haja_diferenciação_por_dedução_retenção_na_base_ou_o_valor_total_nominalsubtitulo_valor_credor"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_valor_principalValor_total_pago": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.valor_principalValor_total_pago": {
+			          "Target": {
+			            "Entity": "medida.valor_principalValor_total_pago"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_principalValor_total_pago"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__valor_principalValor_total_pago"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados": {
+			          "Target": {
+			            "Entity": "medida.texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__texto_de_apoio_reference_labelsubtitulo_pagamentos_realizados"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_valor_principalTotal_pagamentos_realizados": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.valor_principalTotal_pagamentos_realizados": {
+			          "Target": {
+			            "Entity": "medida.valor_principalTotal_pagamentos_realizados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_principalTotal_pagamentos_realizados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__valor_principalTotal_pagamentos_realizados"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_qtd_fornecedores": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.qtd_fornecedores": {
+			          "Target": {
+			            "Entity": "medida.qtd_fornecedores"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_fornecedores"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_qtd_fornecedores"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_qtd_processos": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.qtd_processos": {
+			          "Target": {
+			            "Entity": "medida.qtd_processos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_processos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_qtd_processos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_valor_pago_em_atraso": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.valor_pago_em_atraso": {
+			          "Target": {
+			            "Entity": "medida.valor_pago_em_atraso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_pago_em_atraso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_valor_pago_em_atraso"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_pontualidade_no_prazo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.pontualidade_no_prazo": {
+			          "Target": {
+			            "Entity": "medida.pontualidade_no_prazo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.pontualidade_no_prazo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have__pontualidade_no_prazo"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_ticket_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.ticket_médio": {
+			          "Target": {
+			            "Entity": "medida.ticket_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.ticket_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_ticket_médio"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_qtd_pagamentos": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.qtd_pagamentos": {
+			          "Target": {
+			            "Entity": "medida.qtd_pagamentos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_pagamentos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_qtd_pagamentos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_has_medida_valor_total_pago": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica"
+			          }
+			        },
+			        "medida.valor_total_pago": {
+			          "Target": {
+			            "Entity": "medida.valor_total_pago"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica"
+			            },
+			            "Object": {
+			              "Role": "medida.valor_total_pago"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_ordem_cronologicas_have_valor_total_pago"
+			        }
+			      ]
+			    },
+			    "medida_has_column": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.column": {
+			          "Target": {
+			            "Entity": "medida.column"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.column"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_columns"
+			        }
+			      ]
+			    },
+			    "data_atualizacao_has_data_atualizacao": {
+			      "Binding": {
+			        "ConceptualEntity": "data_atualizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_atualizacao": {
+			          "Target": {
+			            "Entity": "data_atualizacao"
+			          }
+			        },
+			        "data_atualizacao.data_atualizacao": {
+			          "Target": {
+			            "Entity": "data_atualizacao.data_atualizacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_atualizacao"
+			            },
+			            "Object": {
+			              "Role": "data_atualizacao.data_atualizacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_atualizacaos_have_data_atualizacaos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "data_atualizacao"
+			            },
+			            "Name": {
+			              "Role": "data_atualizacao.data_atualizacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_atualizacaos_are_names_IDs_of_data_atualizacaos"
+			        }
+			      ]
+			    },
+			    "fato_ordem_cronologica_compromisso_dia_pagamento_mê_has_fato_ordem_cronologica_compromisso_dia_pagamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_ordem_cronologica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.mê": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
+			          }
+			        },
+			        "fato_ordem_cronologica.compromisso_dia_pagamento.dia": {
+			          "Target": {
+			            "Entity": "fato_ordem_cronologica.compromisso_dia_pagamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -6114,10 +6867,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.dia"
 			            },
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6127,7 +6880,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.dia"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -6137,7 +6890,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "fato_ordem_cronologica.comrpromisso_dia_pagamento.mê"
+			              "Role": "fato_ordem_cronologica.compromisso_dia_pagamento.mê"
 			            }
 			          },
 			          "State": "Generated",

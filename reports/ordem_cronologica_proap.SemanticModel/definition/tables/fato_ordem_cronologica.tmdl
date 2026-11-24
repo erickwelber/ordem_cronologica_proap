@@ -1,9 +1,9 @@
 table fato_ordem_cronologica
-	lineageTag: d4a972a5-1a1a-406a-862f-c48555cac921
+	lineageTag: 8835a1ec-208a-4c64-9604-2c54e35b79d8
 
 	column ug_executora_codigo
 		dataType: string
-		lineageTag: 9ee3b247-4cc9-4d13-9655-af2997545eca
+		lineageTag: 296d25aa-a4fb-4b10-b37d-a805c896c477
 		summarizeBy: none
 		sourceColumn: ug_executora_codigo
 
@@ -11,7 +11,7 @@ table fato_ordem_cronologica
 
 	column ug_executora
 		dataType: string
-		lineageTag: d43804e7-def3-4712-a81b-edcc122c251e
+		lineageTag: 8dd2adcb-c726-4cd8-9de7-2f93c1668dd8
 		summarizeBy: none
 		sourceColumn: ug_executora
 
@@ -19,7 +19,7 @@ table fato_ordem_cronologica
 
 	column ano_lancamento
 		dataType: string
-		lineageTag: e61f1fd9-4ae7-492c-995f-7efc62a72907
+		lineageTag: 54e77006-3fa6-4ace-865a-e6794326515a
 		summarizeBy: none
 		sourceColumn: ano_lancamento
 
@@ -27,7 +27,7 @@ table fato_ordem_cronologica
 
 	column favorecido_doc_codigo
 		dataType: string
-		lineageTag: a09cf079-8958-46ba-8245-1aba8473633e
+		lineageTag: 30433009-83cc-429d-a32e-c53e85162fe8
 		summarizeBy: none
 		sourceColumn: favorecido_doc_codigo
 
@@ -35,7 +35,7 @@ table fato_ordem_cronologica
 
 	column favorecido_doc
 		dataType: string
-		lineageTag: 38fc7446-fdc6-4f5f-a8ab-8a860749d257
+		lineageTag: 9bd04a6c-5aed-4002-b2cf-5bfa33128683
 		summarizeBy: none
 		sourceColumn: favorecido_doc
 
@@ -43,7 +43,7 @@ table fato_ordem_cronologica
 
 	column documento_habil
 		dataType: string
-		lineageTag: 20a876bc-c8a0-422d-a5aa-76b408f69838
+		lineageTag: 245feca8-fd00-4881-98e5-9486e85ab27b
 		summarizeBy: none
 		sourceColumn: documento_habil
 
@@ -51,7 +51,7 @@ table fato_ordem_cronologica
 
 	column dh_credor_codigo
 		dataType: string
-		lineageTag: 4d59d039-1d87-4c02-adcb-85f6455d738c
+		lineageTag: dabc357b-4c72-4d01-b659-87fc85b51ddd
 		summarizeBy: none
 		sourceColumn: dh_credor_codigo
 
@@ -59,7 +59,7 @@ table fato_ordem_cronologica
 
 	column dh_credor
 		dataType: string
-		lineageTag: ce77adf9-60f1-4849-b3f6-aab309840643
+		lineageTag: 86dfece4-7cf1-4f7e-9cdd-ffee17e2545e
 		summarizeBy: none
 		sourceColumn: dh_credor
 
@@ -68,14 +68,14 @@ table fato_ordem_cronologica
 	column dh_dia_ateste
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: df74d646-3289-445c-bcd4-2575ac7324bf
+		lineageTag: f62a03dc-4fd8-4027-9fdb-46200e4d5d87
 		summarizeBy: none
 		sourceColumn: dh_dia_ateste
 
 		variation Variação
 			isDefault
-			relationship: 81155da1-0cc5-4bd0-bdf5-9355bb22dc57
-			defaultHierarchy: LocalDateTable_7bdb9054-40b0-409d-96ba-f944a7954cd9.'Hierarquia de datas'
+			relationship: 19d5f3e8-4df1-43da-8eb4-30ea8745cfaf
+			defaultHierarchy: LocalDateTable_b60dc11d-1a7c-4c7b-a456-cc0e156a5b33.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -84,14 +84,14 @@ table fato_ordem_cronologica
 	column dh_dia_emissao
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 7fb6df8a-1588-416d-96ed-0c901668c47e
+		lineageTag: 75d8b447-1724-4d37-bfcf-82c7d35393fb
 		summarizeBy: none
 		sourceColumn: dh_dia_emissao
 
 		variation Variação
 			isDefault
-			relationship: 72dd0a84-b6e0-4a51-870e-2aefc41ecb3d
-			defaultHierarchy: LocalDateTable_f3a98e30-a9de-4b9b-968b-0870106b511e.'Hierarquia de datas'
+			relationship: 7f49d7a7-2592-4636-9018-de84f04fbcd0
+			defaultHierarchy: LocalDateTable_79008f2e-b76d-4f0b-92e7-c7f3922f12f2.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -99,7 +99,7 @@ table fato_ordem_cronologica
 
 	column dh_processo
 		dataType: string
-		lineageTag: fffa9fd4-2c5e-4706-ae10-c9fd9759a17c
+		lineageTag: a65386d2-3a20-4986-870b-53eb40dbff90
 		summarizeBy: none
 		sourceColumn: dh_processo
 
@@ -107,7 +107,7 @@ table fato_ordem_cronologica
 
 	column natureza_despesa_codigo
 		dataType: string
-		lineageTag: 02fa7ac6-7259-43da-b1b6-cdec29e92a40
+		lineageTag: 5e7f1d3a-19f3-4d28-8c49-04b202cb58b8
 		summarizeBy: none
 		sourceColumn: natureza_despesa_codigo
 
@@ -115,7 +115,7 @@ table fato_ordem_cronologica
 
 	column natureza_despesa
 		dataType: string
-		lineageTag: 2d3bbaea-4065-4952-a22f-b456a6f36a73
+		lineageTag: d604731e-0b8e-408c-9aee-9bb30ff62d43
 		summarizeBy: none
 		sourceColumn: natureza_despesa
 
@@ -123,7 +123,7 @@ table fato_ordem_cronologica
 
 	column fonte_recurso_detalhada_codigo
 		dataType: string
-		lineageTag: c4614313-ee26-4353-8fb5-e53a99926500
+		lineageTag: e5a3f1c3-a0fb-4312-a237-0d785fdb4584
 		summarizeBy: none
 		sourceColumn: fonte_recurso_detalhada_codigo
 
@@ -131,7 +131,7 @@ table fato_ordem_cronologica
 
 	column fonte_recurso_detalhada
 		dataType: string
-		lineageTag: f4925ab7-662a-45dc-8135-90840ce26420
+		lineageTag: 9f6b781a-d001-470b-9549-02566a037af2
 		summarizeBy: none
 		sourceColumn: fonte_recurso_detalhada
 
@@ -140,14 +140,14 @@ table fato_ordem_cronologica
 	column compromisso_dia_vencimento
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 483d70f1-ad7b-4d47-b2b3-c7bbabd70935
+		lineageTag: 8bd201da-bca0-4e2c-b00a-dee3bacc47c5
 		summarizeBy: none
 		sourceColumn: compromisso_dia_vencimento
 
 		variation Variação
 			isDefault
-			relationship: 7c975633-255d-45fe-80bc-e6d387d1e545
-			defaultHierarchy: LocalDateTable_e5ab354f-d427-4925-a143-485175177516.'Hierarquia de datas'
+			relationship: 57db20ae-436b-42ae-b496-6402e47325c9
+			defaultHierarchy: LocalDateTable_d1d7ae91-bde0-49ce-b57a-1457a16a2147.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -156,30 +156,30 @@ table fato_ordem_cronologica
 	column compromisso_dia_transacao
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: caceceb7-af4f-4df6-a2ba-52b7a415b96a
+		lineageTag: c53ccc80-cfbf-4454-a693-f791114da90e
 		summarizeBy: none
 		sourceColumn: compromisso_dia_transacao
 
 		variation Variação
 			isDefault
-			relationship: 79bb342e-58d1-4fdc-87e6-33e37187c167
-			defaultHierarchy: LocalDateTable_edab31fd-f54f-40d8-923e-32bc2fa051c0.'Hierarquia de datas'
+			relationship: 094c3abd-ada7-4f07-bb63-30b5104dffb3
+			defaultHierarchy: LocalDateTable_1e5b85e2-dde6-4359-89d0-1217ef9c754a.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column comrpromisso_dia_pagamento
+	column compromisso_dia_pagamento
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 69d15595-bd36-4c35-b01e-1e92e69a9472
+		lineageTag: c0687c52-b0fd-40fc-990a-d4463e128934
 		summarizeBy: none
-		sourceColumn: comrpromisso_dia_pagamento
+		sourceColumn: compromisso_dia_pagamento
 
 		variation Variação
 			isDefault
-			relationship: 67bae2b2-5773-4d2e-981a-45cdc6d9f006
-			defaultHierarchy: LocalDateTable_d0713b33-f328-438f-a9b8-2871fc62e59d.'Hierarquia de datas'
+			relationship: dbffca8f-39fe-4f5d-8acd-6709e9291fd8
+			defaultHierarchy: LocalDateTable_361dc1b3-c7f6-48d1-b6eb-62f7ba0ae7ac.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -187,7 +187,7 @@ table fato_ordem_cronologica
 
 	column ob_num_ordem_pagamento
 		dataType: string
-		lineageTag: ce6cfb29-8162-4589-bf3d-53cb7ac445e6
+		lineageTag: 0d421a7e-7bb8-457e-a54b-18fc586d08ce
 		summarizeBy: none
 		sourceColumn: ob_num_ordem_pagamento
 
@@ -195,7 +195,7 @@ table fato_ordem_cronologica
 
 	column documento
 		dataType: string
-		lineageTag: 8e9909c5-ce09-4470-8318-e56178e00d72
+		lineageTag: ad1fc4f8-4043-4964-8203-201aee41c77b
 		summarizeBy: none
 		sourceColumn: documento
 
@@ -203,7 +203,7 @@ table fato_ordem_cronologica
 
 	column doc_observacao
 		dataType: string
-		lineageTag: d2f6a44a-cb96-4f00-b664-657602c20c50
+		lineageTag: 9239e3ed-e020-4a79-87fd-524fc0c2fa54
 		summarizeBy: none
 		sourceColumn: doc_observacao
 
@@ -211,7 +211,7 @@ table fato_ordem_cronologica
 
 	column saldo_moeda_origem
 		dataType: double
-		lineageTag: 2d50973b-1b9f-4846-9707-c381f43d06f1
+		lineageTag: ff92cd93-cbf0-4919-bb0f-d99d050f3e16
 		summarizeBy: sum
 		sourceColumn: saldo_moeda_origem
 
@@ -221,7 +221,7 @@ table fato_ordem_cronologica
 
 	column favorecido_doc_mascarado
 		dataType: string
-		lineageTag: b9e58dd1-cc52-44c3-be13-9d2053530251
+		lineageTag: 04ac0e70-9c77-470d-8429-97d91146fbef
 		summarizeBy: none
 		sourceColumn: favorecido_doc_mascarado
 
@@ -229,38 +229,19 @@ table fato_ordem_cronologica
 
 	column ug_executora_nome
 		dataType: string
-		lineageTag: f6e4e96c-28ad-42b4-ae11-016701e65cd3
+		lineageTag: 3b77a914-efd9-4fce-85e7-fcaf85823c5e
 		summarizeBy: none
 		sourceColumn: ug_executora_nome
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Conformidade SLA' =
-			
-			VAR DataPagamento = fato_ordem_cronologica[comrpromisso_dia_pagamento]
-			VAR DataVencimento = fato_ordem_cronologica[compromisso_dia_vencimento]
-			RETURN
-			    IF (
-			        ISBLANK(DataPagamento),
-			        "Pendente / Em Aberto",
-			        IF (
-			            DataPagamento <= DataVencimento,
-			            "No Prazo (Em Dia)",
-			            "Com Atraso de Vencimento"
-			        )
-			    )
-		lineageTag: e60eef03-03ea-4617-9cca-fd62f5926421
-		summarizeBy: none
-
-		annotation SummarizationSetBy = Automatic
-
 	column Dias_Tramitacao =
 			
-			VAR DataFim = COALESCE('fato_ordem_cronologica'[comrpromisso_dia_pagamento], TODAY())
+			VAR DataFim = COALESCE('fato_ordem_cronologica'[compromisso_dia_pagamento], TODAY())
 			RETURN
 			DATEDIFF('fato_ordem_cronologica'[dh_dia_ateste], DataFim, DAY)
 		formatString: 0
-		lineageTag: 35c13936-0ee5-4bcd-b081-d07cc17427e4
+		lineageTag: 9e33543d-a8e6-40f3-9727-f892f2c0f100
 		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
@@ -274,11 +255,8 @@ table fato_ordem_cronologica
 			    'fato_ordem_cronologica'[Dias_Tramitacao] > 60, "CRÍTICO (mais de 60 dias)",
 			    "Não informado"
 			)
-		lineageTag: 7e6ffa98-500e-4b8b-ba52-69c3856ee8ea
+		lineageTag: a960ba8a-c12b-4e16-a4f9-b30edc8a32dd
 		summarizeBy: none
-		sortByColumn: Ordem_Situacao
-
-		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -292,8 +270,60 @@ table fato_ordem_cronologica
 			    4
 			)
 		formatString: 0
-		lineageTag: 6826a6e0-10ff-4ec4-b703-f39227107aea
+		lineageTag: ffac5af0-6ef9-48e1-8520-32bf2d7f45f6
 		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dias_Pagamento = ```
+			
+			DATEDIFF(
+			    fato_ordem_cronologica[dh_dia_ateste], 
+			    fato_ordem_cronologica[compromisso_dia_pagamento], 
+			    DAY
+			)
+			```
+		formatString: 0
+		lineageTag: 777f45ca-d820-4ab3-801c-68d9ce2f654c
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column '-- Faixa_Intervalo' =
+			
+			VAR Dias = DATEDIFF(fato_ordem_cronologica[dh_dia_ateste], fato_ordem_cronologica[compromisso_dia_pagamento], DAY)
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    Dias <= 5, "0 a 5 dias",
+			    Dias <= 30, "6 a 30 dias",
+			    Dias <= 40, "31 a 40 dias",
+			    Dias <= 50, "41 a 50 dias",
+			    Dias <= 60, "51 a 60 dias",
+			    Dias <= 70, "61 a 70 dias",
+			    Dias <= 80, "71 a 80 dias",
+			    Dias <= 90, "81 a 90 dias",
+			    Dias <= 180, "91 a 180 dias",
+			    Dias <= 365, "181 a 365 dias",
+			    "> 365 dias"
+			)
+		lineageTag: a7acbd32-d776-43b6-833f-3f244f42760f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordem_Mes_Pgto = FORMAT(fato_ordem_cronologica[compromisso_dia_pagamento], "YYYYMM")
+		lineageTag: 684f1198-4365-4e07-bfec-e29631afb267
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes_Ano_Pgto = UPPER(FORMAT(fato_ordem_cronologica[compromisso_dia_pagamento], "MMM YYYY"))
+		lineageTag: e641dd07-a7fc-49df-b8b3-67cbee7306a4
+		summarizeBy: none
+		sortByColumn: Ordem_Mes_Pgto
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -305,11 +335,11 @@ table fato_ordem_cronologica
 				    ordem_cronologica_proap_Database = Fonte{[Name="ordem_cronologica_proap",Kind="Database"]}[Data],
 				    public_Schema = ordem_cronologica_proap_Database{[Name="public",Kind="Schema"]}[Data],
 				    fato_ordem_cronologica_Table = public_Schema{[Name="fato_ordem_cronologica",Kind="Table"]}[Data],
-				    #"Tipo Alterado" = Table.TransformColumnTypes(fato_ordem_cronologica_Table,{{"dh_dia_ateste", type date}, {"dh_dia_emissao", type date}, {"compromisso_dia_vencimento", type date}, {"compromisso_dia_transacao", type date}, {"comrpromisso_dia_pagamento", type date}})
+				    #"Tipo Alterado" = Table.TransformColumnTypes(fato_ordem_cronologica_Table,{{"dh_dia_ateste", type date}, {"dh_dia_emissao", type date}, {"compromisso_dia_vencimento", type date}, {"compromisso_dia_transacao", type date}, {"compromisso_dia_pagamento", type date}})
 				in
 				    #"Tipo Alterado"
 
-	annotation PBI_ResultType = Table
-
 	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
 

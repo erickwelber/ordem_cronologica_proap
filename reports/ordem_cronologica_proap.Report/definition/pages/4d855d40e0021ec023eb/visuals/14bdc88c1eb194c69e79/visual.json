@@ -4,10 +4,10 @@
   "position": {
     "x": 434.930127723516,
     "y": 62.72727272727272,
-    "z": 18000,
+    "z": 20000,
     "height": 73.636363636363626,
     "width": 199.99999999999997,
-    "tabOrder": 27000
+    "tabOrder": 31000
   },
   "visualGroup": {
     "displayName": "card_credores_atendidos",
